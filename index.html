@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="fonts/stylesheet.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      
+      /* CSS code for the Progress bar across the top */
+      .progress {
+        height: 3px;
+        width: 0%;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: progress 1s linear;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s); /* use --scroll property created by JS */
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      @keyframes progress {
+        to {
+          background-color: rgb(0, 0, 0);
+          width: 100%;
+        }
+      }
+      
+      .svg-indicator-indication{
+        transition: stroke-dashoffset .5s ease-out;
+      }
+
+
+    </style>
+    <title>Choose Your Own Adventure Game</title>
+  </head>
+  <body>
+    
+    
+    
+    <!-- progress bar across top of screen -->
+    <div class="progress z-3"></div>
+    
+    <!-- for variables/stats indicators, go to near bottom of page -->
+    
+    
+    <!-- Header introduction -->
+    <header class="container-fluid text-center vh-100  d-flex flex-column justify-content-center active">
+      <div class="row">
+        <div class="col-12 ">
+          <div id="intro" class="">
+            <h1>Choose Your Own Adventure</h1>
+            <p>You will play the role of a teacher trying to get by.</p>
+            <button id="launch-button" class="btn btn-outline-dark">Launch Project</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+    
+    
+    <!-- Question 1 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1>You need to find a job</h1>
+            <p>Description here of what this would mean</p>
+            <figure class="row justify-content-center">
+              <div class="col-sm-8">
+                <!-- Image placeholder. Can also be video or graphic -->
+                <img src="http://via.placeholder.com/2600x1400.jpg" alt="image placeholder" class="img-fluid mb-3">
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="You picked choice A"
+                data-description="The consequences of your choice means that A is your destiny."
+                data-media="http://via.placeholder.com/2600x1400.jpg"
+                data-energy="-10"
+                data-motivation="-5"
+                data-money="-1000">
+                Option A
+              </button>
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="You picked choice B"
+                data-description="The consequences of your choice means that B is your destiny."
+                data-media="assets/stock-footage.webm"
+                data-energy="-20"
+                data-motivation="-25"
+                data-money="-2000">
+                Option B
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <!-- Results of question 1 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1 class="title">This title will automatically change based on previous choice</h1>
+            <p class="description">This description will automatically change based on previous choice</p>
+            <figure class="row justify-content-center media">
+              <div class="col-sm-8">
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">OK, continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    <!-- Question 2 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1>You need to find housing</h1>
+            <p>Description here of what the housing market is like</p>
+            <figure class="row justify-content-center">
+              <div class="col-sm-8">
+                <video muted autoplay src="assets/stock-footage.webm" class="img-fluid"></video>
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="You picked choice C"
+                data-description="The consequences of your choice means that C is your destiny."
+                data-media="http://via.placeholder.com/2600x1400.jpg"
+                data-energy="10"
+                data-motivation="-5"
+                data-money="-500">
+                Option C
+              </button>
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="You picked choice D"
+                data-description="The consequences of your choice means that D is your destiny."
+                data-media="http://via.placeholder.com/2600x1400.jpg"
+                data-energy="-70"
+                data-motivation="-25"
+                data-money="-1000">
+                Option D
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    <!-- Results of question 2 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1 class="title">This title will automatically change based on previous choice</h1>
+            <p class="description">This description will automatically change based on previous choice</p>
+            <figure class="row justify-content-center media">
+              <div class="col-sm-8">
+                <!-- No image, but it would go here -->
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">OK, continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Just some update -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1 class="title">No options here, just an update to test things</h1>
+            <p class="description">Some background before we give another choice</p>
+            <figure class="row justify-content-center media">
+              <div class="col-sm-8">
+                <!-- Example of a video -->
+                <video muted autoplay src="assets/stock-footage.webm" class="img-fluid"></video>
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">Go forth!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+   <!-- Question 3 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1>Now you need health insurance</h1>
+            <p>Let's think about what this would mean</p>
+            <figure class="row justify-content-center">
+              <div class="col-sm-8">
+                <!-- no image, but would go here if you wanted one -->
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="You chose not to get health insurance"
+                data-description="Living life on the risky side eh? YOLO."
+                data-media=""
+                data-energy="10"
+                data-motivation="15"
+                data-money="0">
+                Take the risk, No insurance
+              </button>
+              
+              <button class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-title="Playing it safe"
+                data-description="Now you have no money left."
+                data-media=""
+                data-energy="-40"
+                data-motivation="-25"
+                data-money="-5000">
+                Play it safe, get the insurance
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Results of question 2 -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1 class="title">This title will automatically change based on previous choice</h1>
+            <p class="description">This description will automatically change based on previous choice</p>
+            <figure class="row justify-content-center media">
+              <div class="col-sm-8">
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">OK, continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- END OF PROJECT -->
+    <section class="container-fluid text-center vh-100  d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="">
+            <h1 class="title">This is what the end of the project could look like.</h1>
+            <p class="description">Some info summarizing the whole thing.</p>
+            <figure class="row justify-content-center media">
+              <div class="col-sm-8">
+                <!-- Example of a video -->
+                <img src="http://via.placeholder.com/2600x1400.jpg" class="img-fluid">
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-6 form-group">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">Done!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    <!-- 
+      Variables at top left of screen. 
+      You can edit these to be different varialbe,
+      but we may need to make several adjustments 
+      to logic in javascript. See Jeremy. 
+    -->
+    
+    <div id="stats" class="position-fixed top-0 start-0 mt-1 container-fluid d-flex visually-hidden">
+      
+      <!-- Money -->
+      <div id="money" class="position-relative bg-white">
+        <!-- SET STARTING VALUES HERE -->
+        <data data-max="10000" data-min="0" value="10000">
+          <svg class="svg-indicator" width="50" height="70" aria-label="Money indicator">
+            <circle class="svg-indicator-track" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#ddd" />
+            <g transform="rotate(-90,25,25)"><circle class="svg-indicator-indication" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#999" stroke-dasharray="125.6" style="stroke-dashoffset:125.6;" /></g>
+            <text class="svg-indicator-value" x="25" y="26" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">$10,000</text>
+            <text x="25" y="58" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">Money</text>
+          </svg>
+        </data>
+      </div>
+      
+      
+      
+      <!-- Energy -->
+      <div id="energy" class="position-relative bg-white">
+        <!-- SET STARTING STATS HERE -->
+        <data data-max="100" data-min="0" value="100">
+          <svg class="svg-indicator" width="50" height="70" aria-label="Engergy indicator">
+            <circle class="svg-indicator-track" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#ddd"/>
+            <g transform="rotate(-90,25,25)"><circle class="svg-indicator-indication" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#999" stroke-dasharray="125.6" style="stroke-dashoffset:125.6;" /></g>
+            <text class="svg-indicator-value" x="25" y="26" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">100%</text>
+            <text x="25" y="58" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">Energy</text>
+          </svg>
+        </data>
+      </div>
+      
+      <!-- Motivation -->
+      <div id="motivation" class="position-relative bg-white">
+        <!-- SET STARTING STATS HERE -->
+        <data data-max="100" data-min="0" value="50">
+          <svg class="svg-indicator" width="50" height="70" aria-label="Motivation indicator">
+            <circle class="svg-indicator-track" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#ddd"/>
+            <g transform="rotate(-90,25,25)"><circle class="svg-indicator-indication" cx="25" cy="25" r="20" fill="transparent" stroke-width="5px" stroke="#999" stroke-dasharray="125.6" style="stroke-dashoffset:125.6;" /></g>
+            <text class="svg-indicator-value" x="25" y="26" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">50%</text>
+            <text x="25" y="58" alignment-baseline="middle" text-anchor="middle" font-size="9" font-family="sans-serif">Motivation</text>
+          </svg>
+        </data>
+      </div>
+
+    </div>
+    
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script>
+      
+      jQuery(document).ready(function($){
+        
+        //change these if you decide on different variables
+        var variables = ["money", "energy", "motivation"];
+        
+        //progress line across the top of the page
+        //this adds a new --scroll CSS property that is assigned the number of pixels scrolled down.
+        window.addEventListener('scroll', () => {
+          document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+        
+        //create a new easing function "easeOutExpo" for page transitions. 
+        //Can swap with another if wanted. See https://easings.net/ for options
+        $.easing.easeOutExpo = function(x){return x === 1 ? 1 : 1 - Math.pow(2, -10 * x); };
+        $.easing.easeOutQuart = function(x){ return 1 - Math.pow(1 - x, 4); };
+        
+        
+        //click launch project button and scroll to first <section> tag.
+        $("#launch-button").on("click", function(){
+            $(this).blur();
+            $("html,body").animate({scrollTop: $("section").eq(0).offset().top },{duration:150, queue:false, easing:'easeOutExpo'}).promise().done(function(){
+              var scrollTop = $(window).scrollTop();
+              //fix a callback bug in jquery when animating scroll.
+              var id = window.setInterval(function(){
+                if(scrollTop == $(window).scrollTop()){
+                  window.clearInterval(id);
+                  $("#stats").removeClass("visually-hidden");
+                  variables.forEach(function(d,i){donutLength(d, 0);});
+                } else {
+                  scrollTop = $(window).scrollTop();
+                }
+              }, 70);
+          });
+        });
+        
+        
+        
+        //function to calculate the length of arc of the stats donut charts
+        function donutLength(chartName, adjustValue){
+          let chartHolder = $("#" + chartName),
+              data     = chartHolder.find("data").data(),
+              value    = parseInt(chartHolder.find("data").val()),
+              max      = parseInt(data.max) - parseInt(data.min),
+              newValue = value + parseInt(adjustValue) < 0 ? 0 : value + parseInt(adjustValue),
+              svg      = chartHolder.find("svg");
+          
+          newValue = newValue > parseInt(data.max) ? parseInt(data.max) : newValue;
+          let radius = (parseInt(svg.attr("width"))/2) - parseInt(svg.find("circle").first().attr("stroke-width"));
+          let arcLength = 2 * Math.PI * radius;
+          let arcOffset = arcLength * ((max - parseInt(newValue))/max);
+          
+          chartHolder.find("data").val(newValue);
+          
+          let currentValue = chartHolder.find(".svg-indicator-value").text();
+          
+          if(currentValue.match(/^\$/gi)){
+            newValue = newValue.toLocaleString(undefined, { style: 'currency', currency: 'USD',maximumFractionDigits: 0 });
+          }
+          if(currentValue.match(/%$/gi)){
+            newValue = Math.round(newValue).toString() + "%";
+          }
+          
+          //set arc
+          chartHolder.find(".svg-indicator-indication").css("stroke-dasharray", arcLength);
+          chartHolder.find(".svg-indicator-indication").css("stroke-dashoffset", arcOffset);
+          chartHolder.find(".svg-indicator-value").text(newValue);
+        }
+
+        
+        //Kick things of whenever clicking button inside a <section> tag
+        $("button", "section").on("click", function(){
+          
+          //remove keyboard focus from this button (bug in chrome when scrolling before mouse off)
+          $(this).blur();
+          
+          
+          //store variable of the next <section> tag module.
+          var nextModule = $(this).parents("section").next();
+
+          
+          //if they set data-title attribute
+          if(typeof $(this).data("title") !== 'undefined'){
+            nextModule.find(".title").text($(this).data("title"));
+          }
+          
+          //if they stored data-description attribute
+          if(typeof $(this).data("title") !== 'undefined'){
+            nextModule.find(".description").text($(this).data("description"));
+          }
+          
+          //if they stored data-media attribute
+          if(typeof $(this).data("media") !== 'undefined'){
+            let m = $(this).data("media"); 
+            //if an image
+            if(m.match(/\.(jpg|png|gif|jpeg)$/gi)){
+              nextModule.find(".media div").html('<img src="' + m + '" class="img-fluid">');
+            } else
+            //if a video
+            if(m.match(/\.(mp4|webm|ogg)$/gi)){
+              nextModule.find(".media div").html('<video muted autoplay src="' + m + '" class="img-fluid"></video>');
+            } else //if empty
+            if(m.length < 1){
+              nextModule.find(".media div").html("");
+            } else { //assume its an iframe
+              nextModule.find(".media div").html('<iframe src="' + m + '" class="img-fluid" scrolling="no" frameborder="0" width="100%" height="500"></iframe>');
+            }
+          }
+          
+          for(let i=0; i < variables.length; i++){
+            if($(this).data(variables[i])){
+              donutLength(variables[i], parseInt($(this).data(variables[i])));
+            }
+          }
+          
+          
+          //if this isn't the last item, animate scroll.
+          if($(this).parents("section").is('section:last') === false){
+            $("html,body").animate({scrollTop: nextModule.offset().top },{duration:150, queue:false, easing:'easeOutExpo'});
+          } else {
+            console.log("done")
+            enableScroll();
+          }
+        });
+        
+      });
+      
+      // left: 37, up: 38, right: 39, down: 40,
+      // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+      var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+      function preventDefault(e) {
+        e.preventDefault();
+      }
+
+      function preventDefaultForScrollKeys(e) {
+        if (keys[e.keyCode]) {
+          preventDefault(e);
+          return false;
+        }
+      }
+
+      // modern Chrome requires { passive: false } when adding event
+      var supportsPassive = false;
+      try {
+        window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+          get: function () { supportsPassive = true; } 
+        }));
+      } catch(e) {}
+
+      var wheelOpt = supportsPassive ? { passive: false } : false;
+      var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+      // call this to Disable
+      function disableScroll() {
+        window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+        window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+        window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+        window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+      }
+
+      // call this to Enable
+      function enableScroll() {
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+        window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+        window.removeEventListener('touchmove', preventDefault, wheelOpt);
+        window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+      }
+      disableScroll();
+    
+
+      
+    
+    </script>
+  </body>
+</html>
