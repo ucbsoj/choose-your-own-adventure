@@ -17,3 +17,93 @@
   color: blue;
   font-weight: bold;
 }
+
+
+/*** OVERALL STYLES ****/
+
+
+body{
+  background-color: #22252A;
+  color: #ccc;
+  font-family: Roboto, sans-serif;
+}
+
+
+
+/**** HEADER STYLES ****/
+
+header{
+  background-image: url('../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  color: #cccccc;
+}
+
+header .shade{
+  background-color: rgba(0,0,0,0.7);
+}
+
+header h1{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FDBF48;
+  font-size: 3rem;
+}
+
+.white{
+  color: #ffffff;
+}
+
+.orange{
+  color: #FDBF48;
+}
+
+
+/**** DONUT CHART STYLES ****/
+
+.donut-chart{
+  /* adjust size here as needed. They won't distort and maintain ratio. */
+  width: 60px;
+  height: 80px;
+  font-family: Roboto, sans-serif;
+}
+
+.donut-chart text{
+  fill: #ccc; /* chart text color */
+}
+
+.donut-chart svg > circle{
+  stroke: #414A57; /* circle track color */
+}
+
+.donut-chart svg g > circle{
+  stroke: #F5A261; /* circle glow color */
+}
+
+
+/**** BACKGROUNDS ****/
+
+.orange-background{
+  background-image: url('../assets/background-example.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333; /* darker text color */
+}
+
+/* darker buttons on some backgrounds */
+.orange-background button.btn{
+  border-color: #000;
+  color: #000;
+}
+
+.orange-background button.btn:hover{
+  background-color: #333;
+  color: #ccc;
+}
+
+
+

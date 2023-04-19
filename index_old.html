@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--    <link href="fonts/stylesheet.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet" />
     <style>
       /* CSS code for the Progress bar across the top */
@@ -34,32 +34,31 @@
         transition: stroke-dashoffset 0.5s ease-out;
       }
     </style>
-    <title>The Cost of Teaching</title>
+    <title>Choose Your Own Adventure Game</title>
   </head>
   <body>
     <!-- progress bar across top of screen -->
     <div class="progress z-3"></div>
 
+    <!-- for variables/stats indicators, go to near bottom of page -->
 
     <!-- Header introduction -->
     <header
-      class="container-fluid text-center vh-100 p-0">
-      <div class="shade vh-100">
-        <div class="row vh-100 d-flex flex-column justify-content-center align-items-center">
-          <div class="col-11 col-sm-10 col-lg-6">
-            <div id="intro" class="">
-              <h1><span class="white">The Cost of</span> <span class="orange">Teaching</span></h1>
-              <h4>Experience the Realities of Teaching in the Bay Area</h4>
-              <p class="text-start d-block">
-                Every year, about 14% of high school teachers who work in South
-                San Francisco Unified School District leave. Play this game to
-                understand the real challenges that high school teachers in the
-                Bay Area face throughout their career.
-              </p>
-              <button id="launch-button" class="btn btn-outline-light">
-                Start Game!
-              </button>
-            </div>
+      class="container text-center vh-100 d-flex flex-column justify-content-center active">
+      <div class="row">
+        <div class="col-12">
+          <div id="intro" class="">
+            <h1>The Cost of Teaching</h1>
+            <h5>Experience the Realities of Teaching in the Bay Area</h5>
+            <p>
+              Every year, about 14% of high school teachers who work in South
+              San Francisco Unified School District leave. Play this game to
+              understand the real challenges that high school teachers in the
+              Bay Area face throughout their career.
+            </p>
+            <button id="launch-button" class="btn btn-outline-dark">
+              Start Game!
+            </button>
           </div>
         </div>
       </div>
@@ -93,7 +92,7 @@
               your motivation to stay in the teaching profession.
             </p>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -102,56 +101,71 @@
       </div>
     </section>
 
-    <!-- Year 1 -- EXAMPLE OF IMAGE CARDS -->
-    <!-- Additional examples at https://getbootstrap.com/docs/5.3/components/card/ -->
+    <!-- Year 1 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
-          <div class="row">
+      class="container text-center vh-100 d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12">
+          <div class="">
             <h1>Year 1</h1>
             <h4>
               You just finished earning your teaching credential and accepted
               your first job at South San Francisco High School (SSFHS), where
               you’ll be making $59,784 a year. Where are you going to live?
             </h4>
-            <div class="col-6">
-              
+            <figure class="row justify-content-center">
+              <div class="col-sm-8">
+                <!-- Image placeholder. Can also be video or graphic -->
+                <img
+                  src="http://via.placeholder.com/2600x1400.jpg"
+                  alt="image placeholder"
+                  class="img-fluid mb-3" />
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+              <!--
               <button
-                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-energy="0"
+                data-motivation="0"
+                data-money="-10001">
+                Test (lose $10,001)
+              </button>
+              <button
+                class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-energy="-101"
+                data-motivation="0"
+                data-money="0">
+                Test (lose 101% energy)
+              </button>
+              <button
+                class="btn btn-lg btn-group btn-outline-dark d-block"
+                data-energy="0"
+                data-motivation="-101"
+                data-money="0">
+                Test (lose 101% motivation)
+              </button>
+-->
+              <button
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to live in a studio apartment in South San Francisco"
                 data-description="Your first year income just decreased by $24,636! You now have {money}. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
                 data-money="-24636">
-                
-                <img src="assets/button_example_1.png" class="card-img-top" alt="...">
-                
-                <div class="card-body">
-                  <div class="card-text">In a studio apartment in South San Francisco ($2,053/month)</div>
-                </div>
-                
+                In a studio apartment in South San Francisco ($2,053/month)
               </button>
-            
-            </div>
-            <div class="col-6">
 
               <button
-                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to live with your parents"
                 data-description="Luckily, they'll let you stay for free."
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="0"
                 data-money="0">
-                
-                <img src="assets/button_example_2.png" class="card-img-top" alt="...">
-                
-                <div class="card-body">
-                  <div class="card-text">With your parents, who already live in the Bay Area</div>
-                </div>
-                
+                With your parents, who already live in the Bay Area
               </button>
             </div>
           </div>
@@ -161,9 +175,9 @@
 
     <!-- Results of year 1 -->
     <section
-      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+      class="container text-center vh-100 d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -177,7 +191,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -200,7 +214,7 @@
             </h2>
 
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -213,10 +227,10 @@
     <!-- Year 2 -->
 
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
-          <div class="row justify-content-center">
+      class="container text-center vh-100 d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-12">
+          <div class="">
             <h1>Year 2</h1>
             <h4>
               You just became advisor of a new student club that is unique to
@@ -224,52 +238,38 @@
               realize you now have a lot on your plate. What do you do?
             </h4>
             <p>Staying as a club advisor would mean less money.... but ....</p>
-          
-            <div class="col-11 col-sm-8 col-md-10">
-              
+            <figure class="row justify-content-center">
+              <div class="col-sm-8">
+<!--
+                <video
+                  muted
+                  autoplay
+                  src="assets/stock-footage.webm"
+                  class="img-fluid"></video>
+-->
+              </div>
+            </figure>
+            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="card mb-3 bg-transparent text-bg-dark border border-light-subtle p-0 d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to stay as club advisor"
                 data-description="Your students are ecstatic, but your energy levels have depleted a bit."
                 data-media="http://via.placeholder.com/2600x1400.jpg"
                 data-energy="-15"
                 data-motivation="0"
                 data-money="-3376">
-                
-                <div class="row g-0">
-                  <div class="col-4">
-                    <img src="assets/button_example_2.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                
-                  <div class="col-8">
-                    <div class="card-body">
-                      <div class="card-text text-start">Stay as the club advisor</div>
-                    </div>
-                  </div>
-                </div>
+                Stay as the club advisor
               </button>
- 
+
               <button
-                class="card m-0 bg-transparent text-bg-dark border border-light-subtle p-0 d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to let the club dissolve"
                 data-description="You get your Tuesday afternoons back, but your students seem bummed out."
                 data-media="http://via.placeholder.com/2600x1400.jpg"
                 data-energy="00"
                 data-motivation="-15"
                 data-money="-5715.20">
-                <div class="row g-0">
-                
-                  <div class="col-8">
-                    <div class="card-body">
-                      <div class="card-text text-start">
-                      Quit as the club advisor, letting the club dissolve
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <img src="assets/button_example_2.png" class="img-fluid rounded-end" alt="...">
-                  </div>
-                </div>
+                Quit as the club advisor, letting the club dissolve
               </button>
             </div>
           </div>
@@ -296,7 +296,7 @@
               </div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -318,7 +318,7 @@
             </h2>
 
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -335,7 +335,7 @@
             <h2 class="title">“When a teacher leaves, a program can leave.”</h2>
             <h5>- Rhonda Clements, SSFHS History Teacher</h5>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -362,7 +362,7 @@
               </div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -390,7 +390,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -418,7 +418,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to go on vacation with your friends"
                 data-description="You had a great time, but it cost you $1,000."
                 data-media=""
@@ -429,7 +429,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to teach summer school"
                 data-description="You were hoping for a restful summer, but you figured it would be best to teach summer school to make some extra income."
                 data-media=""
@@ -461,7 +461,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -482,7 +482,7 @@
               their vacation time preparing for the new school year.
             </h2>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -508,7 +508,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You decided to move into a $2,390/month apartment in South San Francisco. Good thing you're splitting!"
                 data-description="Your monthly rent is now $1,197."
                 data-media=""
@@ -520,7 +520,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="The cheapest place you could find in the Bay Area is in Vallejo for $1,600/month "
                 data-description="Your share of the rent is $800, not bad! But your commute sucks now and is costing you an additional $350 each month."
                 data-media=""
@@ -552,7 +552,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -573,7 +573,7 @@
               barely enough to cover it.
             </h2>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -600,7 +600,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You decided to go back to school part-time"
                 data-description="Although you're spending money and time to go back to school, your salary will increase by 2%!"
                 data-media=""
@@ -611,7 +611,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You decided to not go back to school"
                 data-description="You didn't have the time anyway."
                 data-media=""
@@ -643,7 +643,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -664,7 +664,7 @@
               credits, you could be making 11.5% more.
             </h2>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -692,7 +692,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to stay teaching at SSFHS"
                 data-description="You're upset your friend is gone, but you'll still keep in touch. Plus, you don't want to let your students down."
                 data-media=""
@@ -703,7 +703,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="Game over!"
                 data-description="You are part of the 8% of teachers in California who are leaving their current school to move to another. You’re now able to make about $27,145 more each year and have your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS."
                 data-media=""
@@ -736,7 +736,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -759,7 +759,7 @@
             <h5>- Julianne Franceschi, SSFHS Italian Teacher</h5>
 
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -787,7 +787,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to pick up a part-time job serving on the weekends"
                 data-description="You barely have any free time anymore, but the extra income is helping."
                 data-media=""
@@ -798,7 +798,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="Game over!"
                 data-description="You are part of the 8% of teachers in California who are leaving their current school to move to another. You’re now able to make about $28,672 more each year and have your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS."
                 data-media=""
@@ -831,7 +831,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -853,7 +853,7 @@
               workers to take on this burden.
             </h2>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -880,7 +880,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="You chose to pay for your partner's health insurance out of pocket"
                 data-description="This will cost you about $800/month through the district."
                 data-media=""
@@ -891,7 +891,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="Game over!"
                 data-description="You’re now able to make $33,671 more each year and have you and your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS.."
                 data-media=""
@@ -925,7 +925,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 OK, continue
               </button>
             </div>
@@ -947,7 +947,7 @@
               growing their families.
             </h2>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Continue
               </button>
             </div>
@@ -976,7 +976,7 @@
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="Game over!"
                 data-description="Your energy and motivation is fairly low, and you’re barely making ends meet. However, you’re still at the school you started in and have grown with the community."
                 data-media=""
@@ -988,7 +988,7 @@
               </button>
 
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="btn btn-lg btn-group btn-outline-dark d-block"
                 data-title="Game over!"
                 data-description="You decided to take a break from teaching due to burnout. You’re considering going into another field."
                 data-media=""
@@ -1021,7 +1021,7 @@
               <div class="col-sm-8"></div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Play again?
               </button>
             </div>
@@ -1047,7 +1047,7 @@
               </div>
             </figure>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-dark d-block">
                 Play again?
               </button>
             </div>
@@ -1067,153 +1067,159 @@
       id="stats"
       class="position-fixed top-0 start-0 mt-1 container d-flex visually-hidden">
       <!-- Money -->
-      <div id="money" class="position-relative donut-chart">
-        <svg
-          class="svg-indicator"
-          width="100%"
-          height="100%"
-          viewBox="0 0 50 70"
-          aria-label="Money indicator">
-          <circle
-            class="svg-indicator-track"
-            cx="25"
-            cy="25"
-            r="20"
-            fill="transparent"
-            stroke-width="5px"
-            stroke="#ddd" />
-          <g transform="rotate(-90,25,25)">
+      <div id="money" class="position-relative bg-white">
+        <!-- SET STARTING VALUES HERE -->
+        <data data-max="100000" data-min="0" value="59784">
+          <svg
+            class="svg-indicator"
+            width="50"
+            height="70"
+            aria-label="Money indicator">
             <circle
-              class="svg-indicator-indication"
+              class="svg-indicator-track"
               cx="25"
               cy="25"
               r="20"
               fill="transparent"
               stroke-width="5px"
-              stroke="#999"
-              stroke-dasharray="125.6"
-              style="stroke-dashoffset: 125.6" />
-          </g>
-          <text
-            class="svg-indicator-value"
-            x="25"
-            y="26"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            $10,000
-          </text>
-          <text
-            x="25"
-            y="58"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            Money
-          </text>
-        </svg>
+              stroke="#ddd" />
+            <g transform="rotate(-90,25,25)">
+              <circle
+                class="svg-indicator-indication"
+                cx="25"
+                cy="25"
+                r="20"
+                fill="transparent"
+                stroke-width="5px"
+                stroke="#999"
+                stroke-dasharray="125.6"
+                style="stroke-dashoffset: 125.6" />
+            </g>
+            <text
+              class="svg-indicator-value"
+              x="25"
+              y="26"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              $10,000
+            </text>
+            <text
+              x="25"
+              y="58"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              Money
+            </text>
+          </svg>
+        </data>
       </div>
 
       <!-- Energy -->
-      <div id="energy" class="position-relative donut-chart">
-        <svg
-          class="svg-indicator"
-          width="100%"
-          height="100%"
-          viewBox="0 0 50 70"
-          aria-label="Engergy indicator">
-          <circle
-            class="svg-indicator-track"
-            cx="25"
-            cy="25"
-            r="20"
-            fill="transparent"
-            stroke-width="5px"
-            stroke="#ddd" />
-          <g transform="rotate(-90,25,25)">
+      <div id="energy" class="position-relative bg-white">
+        <!-- SET STARTING STATS HERE -->
+        <data data-max="100" data-min="0" value="100">
+          <svg
+            class="svg-indicator"
+            width="50"
+            height="70"
+            aria-label="Engergy indicator">
             <circle
-              class="svg-indicator-indication"
+              class="svg-indicator-track"
               cx="25"
               cy="25"
               r="20"
               fill="transparent"
               stroke-width="5px"
-              stroke="#999"
-              stroke-dasharray="125.6"
-              style="stroke-dashoffset: 125.6" />
-          </g>
-          <text
-            class="svg-indicator-value"
-            x="25"
-            y="26"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            100%
-          </text>
-          <text
-            x="25"
-            y="58"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            Energy
-          </text>
-        </svg>
+              stroke="#ddd" />
+            <g transform="rotate(-90,25,25)">
+              <circle
+                class="svg-indicator-indication"
+                cx="25"
+                cy="25"
+                r="20"
+                fill="transparent"
+                stroke-width="5px"
+                stroke="#999"
+                stroke-dasharray="125.6"
+                style="stroke-dashoffset: 125.6" />
+            </g>
+            <text
+              class="svg-indicator-value"
+              x="25"
+              y="26"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              100%
+            </text>
+            <text
+              x="25"
+              y="58"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              Energy
+            </text>
+          </svg>
+        </data>
       </div>
 
       <!-- Motivation -->
-      <div id="motivation" class="position-relative donut-chart">
-        <svg
-          class="svg-indicator"
-          width="100%"
-          height="100%"
-          viewBox="0 0 50 70"
-          aria-label="Motivation indicator">
-          <circle
-            class="svg-indicator-track"
-            cx="25"
-            cy="25"
-            r="20"
-            fill="transparent"
-            stroke-width="5px"
-            stroke="#ddd" />
-          <g transform="rotate(-90,25,25)">
+      <div id="motivation" class="position-relative bg-white">
+        <!-- SET STARTING STATS HERE -->
+        <data data-max="100" data-min="0" value="100">
+          <svg
+            class="svg-indicator"
+            width="50"
+            height="70"
+            aria-label="Motivation indicator">
             <circle
-              class="svg-indicator-indication"
+              class="svg-indicator-track"
               cx="25"
               cy="25"
               r="20"
               fill="transparent"
               stroke-width="5px"
-              stroke="#999"
-              stroke-dasharray="125.6"
-              style="stroke-dashoffset: 125.6" />
-          </g>
-          <text
-            class="svg-indicator-value"
-            x="25"
-            y="26"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            100%
-          </text>
-          <text
-            x="25"
-            y="58"
-            alignment-baseline="middle"
-            text-anchor="middle"
-            font-size="9"
-            font-family="sans-serif">
-            Motivation
-          </text>
-        </svg>
+              stroke="#ddd" />
+            <g transform="rotate(-90,25,25)">
+              <circle
+                class="svg-indicator-indication"
+                cx="25"
+                cy="25"
+                r="20"
+                fill="transparent"
+                stroke-width="5px"
+                stroke="#999"
+                stroke-dasharray="125.6"
+                style="stroke-dashoffset: 125.6" />
+            </g>
+            <text
+              class="svg-indicator-value"
+              x="25"
+              y="26"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              100%
+            </text>
+            <text
+              x="25"
+              y="58"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              font-size="9"
+              font-family="sans-serif">
+              Motivation
+            </text>
+          </svg>
+        </data>
       </div>
     </div>
 
@@ -1222,484 +1228,314 @@
     <script src="js/jquery.csv.min.js"></script>
     <script>
       jQuery(document).ready(function ($) {
-        
-        
-        const the_game = {
-          
-          
-          
-          
-          //change these if you decide on different variables
-          variables : {
-            
-            
-            "money" : {
-              startingValue: 59784,
-              currentValue : 59784, //just a placeholder that will programmaticaly change
-              maxValue: 100000,
-              gameOverWhen : 0, //game over when it reaches this value
-              gameOverMessage: {
-                title: "Game Over!",
-                description:
-                  "Your income isn’t enough to cover your expenses. You’ve decided your only solution is to transfer to a higher paying district by the end of this school year. Although you’ll feel more financially secure, part of you will miss your colleagues and students at SSFHS.",
-                media: "http://via.placeholder.com/2600x1400.jpg",
-                button_message: "Play Again?"
-              },
-              format: function(val){ 
-               return val.toLocaleString(undefined, {style: "currency",currency: "USD", maximumFractionDigits: 0 })
-              }
-            },
-            
-            
-            
-            "energy":{
-              startingValue: 100,
-              currentValue : 100, //just a placeholder that will programmaticaly change
-              maxValue: 100,
-              gameOverWhen : 0, //game over when it reaches this value
-              gameOverMessage: {
-                title: "Game Over!",
-                description:
-                  "You ran out of ENERGY! Some info here... Goodbye! Or See you Later",
-                media: "http://via.placeholder.com/2600x1400.jpg",
-                button_message: "Play Again?"
-              },
-              format: function(val){
-                let v = val > this.maxValue ? this.maxValue : val;
-                return v + "%";
-              }
-            }, 
-            
-            
-            
-            "motivation": {
-              startingValue: 100,
-              currentValue : 100, //just a placeholder that will programmaticaly change
-              maxValue: 100,
-              gameOverWhen : 0, //game over when it reaches this value
-              gameOverMessage: {
-                title: "Game Over!",
-                description:
-                  "You ran out of MOTIVATION! Some info here... Goodbye! Or See you Later",
-                media: "http://via.placeholder.com/2600x1400.jpg",
-                button_message: "Play Again?"
-              },
-              format: function(val){
-                let v = val > this.maxValue ? this.maxValue : val;
-                return v + "%";
-              }
-            }
-          },
+        //change these if you decide on different variables
+        var variables = ["money", "energy", "motivation"];
 
-          
-          
-          
-          //overall options
-          options: {
-            transitionSpeed: 150, //speed of page transitions in milliseconds
-            firstTime : true,
-            gameOver  : false,
-            whenDoneGoto: "header"
-          },
-          
-          //holder for next section
-          nextSection: {},
-          
-          
-          
-          
-          
-          
-          //function that kicks everything off
-          init: function(){
-            
-            const that = this;
-            
-            //set up progress bar along the top
-            this.setUpProgressBar();
-            
-            //add easing functions
-            $.easing.easeOutExpo  = x => x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
-            $.easing.easeOutQuart = x => 1 - Math.pow(1 - x, 4);
-            
-            //set up handler for launch button click
-            $("#launch-button").on("click", function() { that.onLaunchButtonPress(this) });
-            
-            //go to next section when clicking any button.
-            $("button", "section").on("click", function() { that.setUpNextSection(this) });
-            
-          },
-          
-          
-          
-          
-          //adds a new --scroll CSS property that is assigned the number of pixels scrolled down.
-          setUpProgressBar: function(){
-            window.addEventListener(
-              "scroll",
-              () => {
-                document.body.style.setProperty(
-                  "--scroll",
-                  window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-                );
-              },
-              false
+        //set the lowest number each of these variables can reach before game over.
+        var gameover = [0, 0, 0];
+
+        //specify the game over message
+        var gameover_message_money = {
+          title: "Game Over!",
+          description:
+            "Your income isn’t enough to cover your expenses. You’ve decided your only solution is to transfer to a higher paying district by the end of this school year. Although you’ll feel more financially secure, part of you will miss your colleagues and students at SSFHS.",
+          media: "http://via.placeholder.com/2600x1400.jpg",
+          button_message: "Play Again?"
+        };
+
+        var gameover_message_motivation = {
+          title: "Game Over!",
+          description:
+            "You ran out of MOTIVATION! Some info here... Goodbye! Or See you Later",
+          media: "http://via.placeholder.com/2600x1400.jpg",
+          button_message: "Play Again?"
+        };
+
+        var gameover_message_energy = {
+          title: "Game Over!",
+          description:
+            "You ran out of ENERGY! Some info here... Goodbye! Or See you Later",
+          media: "http://via.placeholder.com/2600x1400.jpg",
+          button_message: "Play Again?"
+        };
+        
+        var projectStarted = false;
+
+        //progress line across the top of the page
+        //this adds a new --scroll CSS property that is assigned the number of pixels scrolled down.
+        window.addEventListener(
+          "scroll",
+          () => {
+            document.body.style.setProperty(
+              "--scroll",
+              window.pageYOffset /
+                (document.body.offsetHeight - window.innerHeight)
             );
           },
-          
-          
-          
-          
-          
-          
-          //pressing the initial launch button
-          // {obj} - the jquery button object calling this
-          onLaunchButtonPress : function(obj){
-            
-            //bug fix when animating scroll, button stays focused.
-            $(obj).blur();
-            
-            //scroll to first <section> tag
-            this.scrollToSection($("section").eq(0));
-            
-          },
-            
-          
-          
-          
-          
-          
-          
-          //change the donut arc lengths from their current values
-          changeDonutArcLength: function(chartName, adjustValueBy){
-            
-            //each variable is in its own div
-            const chartHolder = $("#" + chartName);
-            
-            //convenience get max value possible
-            const max = this.variables[chartName].maxValue;
-            
-            //add adjusted value
-            let newValue = this.variables[chartName].currentValue + parseInt(adjustValueBy);
-            
-            //keep it from exceeding maxValue
-            if(newValue > this.variables[chartName].maxValue){
-              newValue = this.variables[chartName].maxValue;
-            }
-            
-            //if too low, trigger game over
-            if(newValue < this.variables[chartName].gameOverWhen){
-              newValue = this.variables[chartName].gameOverWhen;
-              this.gameOver(chartName);
-            }
-            
-            //get the arc offset value
-            svg = chartHolder.find("svg");
-            //with / 2 - strokeWith
-            let radius = 20;
-            let arcLength = 2 * Math.PI * radius;
-            let arcOffset = arcLength * ((max - parseInt(newValue)) / max);
-            
-            //store the current value
-            this.variables[chartName].currentValue = newValue;
-            
-            //set arc
-            chartHolder
-              .find(".svg-indicator-indication")
-              .css("stroke-dasharray", arcLength);
-            chartHolder
-              .find(".svg-indicator-indication")
-              .css("stroke-dashoffset", arcOffset);
+          false
+        );
 
-            //set the text
-            chartHolder.find(".svg-indicator-value").text(this.variables[chartName].format(newValue));
-            
-          },
+        //create a new easing function "easeOutExpo" for page transitions.
+        //Can swap with another if wanted. See https://easings.net/ for options
+        $.easing.easeOutExpo = function (x) {
+          return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+        };
+        $.easing.easeOutQuart = function (x) {
+          return 1 - Math.pow(1 - x, 4);
+        };
+
+        //click launch project button and scroll to first <section> tag.
+        $("#launch-button").on("click", function () {
+          $(this).blur();
+          $("html,body")
+            .animate(
+              { scrollTop: $("section").eq(0).offset().top },
+              { duration: 150, queue: false, easing: "easeOutExpo" }
+            )
+            .promise()
+            .done(function () {
+              var scrollTop = $(window).scrollTop();
+              //fix a callback bug in jquery when animating scroll.
+              scrollTop = $(window).scrollTop();
+            });
+        });
+        
+        function showStats(){
+          if(projectStarted === false){
           
-          
-          
-          
-          
-          
-          
-          //initial setup of donut charts. Also resets them to their initial setting
-          initDonutCharts : function(){
-            
             $("#stats").removeClass("visually-hidden");
-            
-            //iterate through variables, set donuts charts to their starting values
-            for (const [key, value] of Object.entries(this.variables)){
-              this.variables[key].currentValue = this.variables[key].startingValue;
-              this.changeDonutArcLength(key, 0);
-            };
-          },
-          
-          
-          
-          
-          
-          
-          //extra values from data attributes (i.e. data-money="-100") and set donut charts.
-          extractValuesAndSetDonutCharts : function(obj){
- 
-            for (const [key, value] of Object.entries(this.variables)){
-              if($(obj).attr("data-" + key)){
-                this.changeDonutArcLength(key, $(obj).data(key));
-              }
-            }
-            
-          },
-          
-          
-          
-          
-          
-          
-          //Clicking on a button within any section sets up next section
-          //{obj} - The button clicked, with data attributes containing info for next section
-          setUpNextSection: function(obj){
-            
-            //bug fix when animating scroll, button stays focused.
-            $(obj).blur();
-            
-            //launch donut charts if this is first time running
-            if(this.options.firstTime){
-              this.options.firstTime = false;
-              this.initDonutCharts();
-            }
-            
-            //store next section for use later
-            this.nextSection = $(obj).parents("section").next("section");
-            
-            //get data attributes (i.e. data-money="-1000") and set donut charts accordingly.
-            this.extractValuesAndSetDonutCharts(obj);
-            
-            //don't continue to setting next section if we hit game over
-            if(this.options.gameOver === true){
-              return;
-            }
-            
-            //if they stored a data-title attribute, set it on the next section
-            if (typeof $(obj).data("title") !== "undefined") {
-              this.nextSection
-                .find(".title")
-                .text(this.replaceTemplateLiterals($(obj).data("title")));
-            }
-            
-            //if they stored data-description attribute, set it on next section
-            if (typeof $(obj).data("description") !== "undefined") {
-              this.nextSection
-                .find(".description")
-                .text(this.replaceTemplateLiterals($(obj).data("description")));
-            }
-            
-            //if they stored a data-media attribute
-            if (typeof $(obj).data("media") !== "undefined") {
-              this.parseDataMediaAttribute(obj);
-            } else {
-              //it's empty, zero it out
-              this.nextSection.find(".media div").html("");
-            }
-            
-            //ready to go to next section
-            this.scrollToSection(this.nextSection);
-          },
-          
-          
-          
-          
-          scrollToSection: function(section, callback=function(){}){
+            variables.forEach(function (d, i) {
+              donutLength(d, 0);
+            });
+          }
+        }
 
-            $("html,body")
-              .animate(
-                { scrollTop: section.offset().top },
-                { duration: this.transitionSpeed, queue: false, easing: "easeOutExpo" }
-              )
-              .promise()
-              .done(function () {
-              
-                //bug fix because animating scroll done() fires multiple times. This will ensure one activation
-                var scrollTop = $(window).scrollTop();
-                var id = window.setInterval(function () {
-                  if (scrollTop == $(window).scrollTop()) {
-                    window.clearInterval(id);
-                    
-                    callback();
-                    
-                  } else {
-                    scrollTop = $(window).scrollTop();
-                  }
-                }, 70);
-              });
-          },
+        //function to calculate the length of arc of the stats donut charts
+        function donutLength(chartName, adjustValue) {
+          let chartHolder = $("#" + chartName),
+            data = chartHolder.find("data").data(),
+            value = parseInt(chartHolder.find("data").val()),
+            max = parseInt(data.max) - parseInt(data.min),
+            newValue =
+              value + parseInt(adjustValue) < 0
+                ? 0
+                : value + parseInt(adjustValue),
+            svg = chartHolder.find("svg");
+
+          newValue =
+            newValue > parseInt(data.max) ? parseInt(data.max) : newValue;
+          let radius =
+            parseInt(svg.attr("width")) / 2 -
+            parseInt(svg.find("circle").first().attr("stroke-width"));
+          let arcLength = 2 * Math.PI * radius;
+          let arcOffset = arcLength * ((max - parseInt(newValue)) / max);
+
+          chartHolder.find("data").val(newValue);
+          chartHolder.data("value", newValue);
+
+          let currentValue = chartHolder
+            .find(".svg-indicator-value")
+            .text()
+            .trim();
+
+          if (currentValue.match(/^\$/gi)) {
+            newValue = newValue.toLocaleString(undefined, {
+              style: "currency",
+              currency: "USD",
+              maximumFractionDigits: 0
+            });
+          }
+          if (currentValue.match(/%$/gi)) {
+            newValue = Math.round(newValue).toString() + "%";
+          }
+
+          //set arc
+          chartHolder
+            .find(".svg-indicator-indication")
+            .css("stroke-dasharray", arcLength);
+          chartHolder
+            .find(".svg-indicator-indication")
+            .css("stroke-dashoffset", arcOffset);
+
+          chartHolder.find(".svg-indicator-value").text(newValue);
+        }
+
+        
+        
+        //Kick things of whenever clicking button inside a <section> tag
+        $("button", "section").on("click", function () {
+          //remove keyboard focus from this button (bug in chrome when scrolling before mouse off)
+          $(this).blur();
           
+          showStats();
           
-          
-          
-          
-          //trigger game cover
-          // {variableKey} - which variable ran out of juice
-          gameOver: function(variableKey){
-            
-            this.options.gameOver = true;
-            
-            //change title of next section
-            this.nextSection
+          if(projectStarted === false){
+            projectStarted = true;
+          }
+
+          //store variable of the next <section> tag module.
+          var nextModule = $(this).parents("section").next();
+
+          //if they set data-title attribute
+          if (typeof $(this).data("title") !== "undefined") {
+            nextModule
               .find(".title")
-              .text(this.replaceTemplateLiterals(this.variables[variableKey].gameOverMessage.title));
-            
-            //change description of next section
-            this.nextSection
-              .find(".description") .text(this.replaceTemplateLiterals(this.variables[variableKey].gameOverMessage.description));
-            
-            //hide existing button
-            this.nextSection
+              .text(replaceTemplateLiteralWithVariables($(this).data("title")));
+          }
+
+          for (let i = 0; i < variables.length; i++) {
+            if ($(this).data(variables[i])) {
+              donutLength(variables[i], parseInt($(this).data(variables[i])));
+            }
+          }
+
+          //capture current variable (money, motivation, etc.) values
+          let variable1 = parseInt($("#" + variables[0]).data("value"));
+          let variable2 = parseInt($("#" + variables[1]).data("value"));
+          let variable3 = parseInt($("#" + variables[2]).data("value"));
+          
+          
+          //if they stored data-description attribute
+          if (typeof $(this).data("title") !== "undefined") {
+            nextModule
+              .find(".description")
+              .text(
+                replaceTemplateLiteralWithVariables($(this).data("description"))
+              );
+          }
+
+          //if they stored data-media attribute
+          if (typeof $(this).data("media") !== "undefined") {
+            let m = $(this).data("media");
+            //if an image
+            if (m.match(/\.(jpg|png|gif|jpeg)$/gi)) {
+              nextModule
+                .find(".media div")
+                .html('<img src="' + m + '" class="img-fluid">');
+            }
+            //if a video
+            else if (m.match(/\.(mp4|webm|ogg)$/gi)) {
+              nextModule
+                .find(".media div")
+                .html(
+                  '<video muted autoplay src="' +
+                    m +
+                    '" class="img-fluid"></video>'
+                );
+            } //if empty
+            else if (m.length < 1) {
+              nextModule.find(".media div").html("");
+            } else {
+              //assume its an iframe
+              nextModule
+                .find(".media div")
+                .html(
+                  '<iframe src="' +
+                    m +
+                    '" class="img-fluid" scrolling="no" frameborder="0" width="100%" height="500"></iframe>'
+                );
+            }
+          }
+
+          //check if game over. If so, override media
+          if (
+            variable1 <= gameover[0] ||
+            variable2 <= gameover[1] ||
+            variable3 <= gameover[2]
+          ) {
+            var gameover_msg;
+
+            //figure out which reason for game over
+            if (variable1 <= gameover[0]) {
+              gameover_msg = structuredClone(gameover_message_money);
+            } else if (variable2 <= gameover[1]) {
+              gameover_msg = structuredClone(gameover_message_energy);
+            } else if (variable3 <= gameover[2]) {
+              gameover_msg = structuredClone(gameover_message_motivation);
+            }
+
+            nextModule
+              .find(".title")
+              .text(replaceTemplateLiteralWithVariables(gameover_msg.title));
+            nextModule
+              .find(".description")
+              .text(
+                replaceTemplateLiteralWithVariables(gameover_msg.description)
+              );
+            if (gameover_msg.media != "") {
+              nextModule
+                .find(".media div")
+                .html(
+                  '<img class="img-fluid" src="' + gameover_msg.media + '">'
+                );
+            } else {
+              nextModule.find(".media div").html("");
+            }
+
+            var t = nextModule
               .find("button")
               .removeClass("d-block")
               .addClass("d-none");
-            
-            //swap or add media 
-            this.nextSection
-              .find(".media div")
-              .html(this.parseMediaString(this.variables[variableKey].gameOverMessage.media));
-            
-            this.createGameOverButton(variableKey);
-            
-          },
-          
-          
-          
-          
-          
-          
-          //create temporary game over button, when clicked, erase.
-          createGameOverButton: function(variableKey){
-            
-            const that = this;
-            
-            const gameOver_btn = $("<button />")
+
+            var gameOver_btn = $("<button />")
               .addClass(
-                "btn btn-lg btn-group btn-outline-light d-block gameover"
+                "btn btn-lg btn-group btn-outline-dark d-block gameover"
               )
-              .html(this.variables[variableKey].gameOverMessage.button_message);
-            
-            this.nextSection.find(".form-group").append(gameOver_btn);
-            
-            //create click handler
-            gameOver_btn.on("click", function() { that.clickHandlerForGameOverButton(this) });
-            
-            //scroll to next section
-            this.scrollToSection(this.nextSection);
-            
-          },
-          
-          
-          
-          
-          
-          //click handler for game over button
-          clickHandlerForGameOverButton: function(obj, goto){
-            
-            const that = this;
-            
-            $("#stats").addClass("visually-hidden");
-            
-            this.scrollToSection($(this.options.whenDoneGoto), function(){
-              
-              //reappear old continue button
-              that.nextSection
-                .find(".button")
-                .removeClass("d-none")
-                .addClass("d-block");
-              
-              //remove this gameover button
-              obj.remove();
-              
-              //reset donut charts
-              //that.initDonutCharts();
-              that.options.firstTime = true;
-              
-              //turn off game over trigger
-              that.options.gameOver = false;
-              
+              .html(gameover_msg.button_message);
+
+            nextModule.find(".form-group").append(gameOver_btn);
+
+            gameOver_btn.on("click", function () {
+              for (let j = 0; j < variables.length; j++) {}
+
+              $("html,body").animate(
+                { scrollTop: $("header").offset().top },
+                {
+                  duration: 150,
+                  queue: false,
+                  easing: "easeOutExpo",
+                  done: function () {
+                    t.removeClass("d-none").addClass("d-block");
+                    gameOver_btn.remove();
+                    for (let i = 0; i < variables.length; i++) {
+                      donutLength(
+                        variables[i],
+                        parseInt(
+                          $("#" + variables[i])
+                            .find("data")
+                            .data("max")
+                        )
+                      );
+                    }
+                  }
+                }
+              );
             });
-             
-          },
-          
-          
-          
+          }
 
-          
-          //data media attribute
-          //{obj} - button object that was clicked and has data-media attribute
-          parseDataMediaAttribute: function(obj){
-            
-            //if they stored data-media attribute
-            const media = $(obj).data("media");
-            
-            console.log(media);
-        
-            this.nextSection
-              .find(".media div")
-              .html(this.parseMediaString(media));
-            
-          },
-            
-            
-            
-          
-          
-          //return correct media HTML code
-          //{media} - string of media value, like URL to jpg or mp4
-          parseMediaString: function(media){
-            
-            if (media.match(/\.(jpg|png|gif|jpeg|svg)$/gi)) {
-              return '<img src="' + media + '" class="img-fluid">';
-            } else 
-            if (media.match(/\.(mp4|webm|ogg)$/gi)) {
-              return '<video muted autoplay src="' + media + '" class="img-fluid"></video>';
-            } else 
-            if (media.match(/\.(mp3|mpa|oga)$/gi)) {
-              return '<audio controls src="' + media + '" width="100%"></audio>';
-            } else  
-            if(media == ""){
-              return '';
-            } else
-            //assum its an iframe
-            {
-              return '<iframe src="' + media + '" scrolling="no" frameborder="0" width="100%" height="500"></iframe>'
-            }
-          },
-          
-          
-          
-          
-          
-          //replace template literals like {money} with the actual money value
-          replaceTemplateLiterals: function(template="") {
-            const data = {};
-            for (const [key, value] of Object.entries(this.variables)){
-              data[key] = this.variables[key].format(value.currentValue);
-            }
-            const pattern = /{\s*(\w+?)\s*}/g; // {property}
-            return template.replace(pattern, (_, token) => data[token] || "");
-          },
-          
+          //if this isn't the last item, animate scroll.
+          if ($(this).parents("section").is("section:last") === false) {
+            $("html,body").animate(
+              { scrollTop: nextModule.offset().top },
+              { duration: 150, queue: false, easing: "easeOutExpo" }
+            );
+          } else {
+            enableScroll();
+          }
+        }); //close jquery
 
-        };
-        
-        
-        the_game.init();
-          
-      
-        });
-        
-
-
-        /*
-        
-       
-        
+        //input string and convert template literal to the specified variable
+        function replaceTemplateLiteralWithVariables(template) {
+          const data = {};
+          for (let i = 0; i < variables.length; i++) {
+            data[variables[i]] = $("#" + variables[i])
+              .find(".svg-indicator-value")
+              .text();
+          }
+          const pattern = /{\s*(\w+?)\s*}/g; // {property}
+          return template.replace(pattern, (_, token) => data[token] || "");
+        }
+      });
       // left: 37, up: 38, right: 39, down: 40,
       // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
       var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
@@ -1753,8 +1589,6 @@
         );
       }
       // disableScroll();
-      
-      */
     </script>
   </body>
 </html>
