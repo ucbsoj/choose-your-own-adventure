@@ -40,15 +40,17 @@
     <!-- progress bar across top of screen -->
     <div class="progress z-3"></div>
 
-
     <!-- Header introduction -->
-    <header
-      class="container-fluid text-center vh-100 p-0">
+    <header class="container-fluid text-center vh-100 p-0">
       <div class="shade vh-100">
-        <div class="row vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="row vh-100 d-flex flex-column justify-content-center align-items-center">
           <div class="col-11 col-sm-10 col-lg-6">
             <div id="intro" class="">
-              <h1><span class="white">The Cost of</span> <span class="orange">Teaching</span></h1>
+              <h1>
+                <span class="white">The Cost of</span>
+                <span class="orange">Teaching</span>
+              </h1>
               <h4>Experience the Realities of Teaching in the Bay Area</h4>
               <p class="text-start d-block">
                 Every year, about 14% of high school teachers who work in South
@@ -116,42 +118,45 @@
               you’ll be making $59,784 a year. Where are you going to live?
             </h4>
             <div class="col-6">
-              
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to live in a studio apartment in South San Francisco"
-                data-description="Your first year income just decreased by $24,636! You now have {money}. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
+                data-description="After annual expenses, your first year income just decreased by $65,610! You now have {money}. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="-24636">
-                
-                <img src="assets/button_example_1.png" class="card-img-top" alt="...">
-                
+                data-money="-65610">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
+
                 <div class="card-body">
-                  <div class="card-text">In a studio apartment in South San Francisco ($2,053/month)</div>
+                  <div class="card-text">
+                    In a studio apartment in South San Francisco ($2,053/month)
+                  </div>
                 </div>
-                
               </button>
-            
             </div>
             <div class="col-6">
-
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to live with your parents"
                 data-description="Luckily, they'll let you stay for free."
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="0"
+                data-motivation="-5"
                 data-money="0">
-                
-                <img src="assets/button_example_2.png" class="card-img-top" alt="...">
-                
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
                 <div class="card-body">
-                  <div class="card-text">With your parents, who already live in the Bay Area</div>
+                  <div class="card-text">
+                    With your parents, who already live in the Bay Area
+                  </div>
                 </div>
-                
               </button>
             </div>
           </div>
@@ -172,10 +177,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
-              <!-- maybe I'll add some kind of expenses breakdown here  -->
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -187,7 +194,7 @@
     </section>
 
     <!-- Transition Card -->
-<!--
+    <!--
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
@@ -223,32 +230,41 @@
               the school's community. Although you’re happy to do it, you
               realize you now have a lot on your plate. What do you do?
             </h4>
-            <p>Staying as a club advisor would mean less money.... but ....</p>
-          
+            <p>
+              Staying as a club advisor earns you an additional stipend of
+              $2,339, but it would take more time out of your day.
+            </p>
+
             <div class="col-11 col-sm-8 col-md-10">
-              
               <button
                 class="card mb-3 bg-transparent text-bg-dark border border-light-subtle p-0 d-block"
                 data-title="You chose to stay as club advisor"
-                data-description="Your students are ecstatic, but your energy levels have depleted a bit."
+                data-description="Your students are ecstatic, but your energy levels have depleted a bit. Sponsoring a club or extracurricular activity at school can bring
+              in some extra money, but it can be a big time commitment. At the
+              same time, clubs are important for building a sense of community
+              for students."
                 data-media="http://via.placeholder.com/2600x1400.jpg"
                 data-energy="-15"
-                data-motivation="0"
+                data-motivation="+5"
                 data-money="-3376">
-                
                 <div class="row g-0">
                   <div class="col-4">
-                    <img src="assets/button_example_2.png" class="img-fluid rounded-start" alt="...">
+                    <img
+                      src="assets/button_example_2.png"
+                      class="img-fluid rounded-start"
+                      alt="..." />
                   </div>
-                
+
                   <div class="col-8">
                     <div class="card-body">
-                      <div class="card-text text-start">Stay as the club advisor</div>
+                      <div class="card-text text-start">
+                        Stay as the club advisor
+                      </div>
                     </div>
                   </div>
                 </div>
               </button>
- 
+
               <button
                 class="card m-0 bg-transparent text-bg-dark border border-light-subtle p-0 d-block"
                 data-title="You chose to let the club dissolve"
@@ -258,16 +274,18 @@
                 data-motivation="-15"
                 data-money="-5715.20">
                 <div class="row g-0">
-                
                   <div class="col-8">
                     <div class="card-body">
                       <div class="card-text text-start">
-                      Quit as the club advisor, letting the club dissolve
+                        Quit as the club advisor, letting the club dissolve
                       </div>
                     </div>
                   </div>
                   <div class="col-4">
-                    <img src="assets/button_example_2.png" class="img-fluid rounded-end" alt="...">
+                    <img
+                      src="assets/button_example_2.png"
+                      class="img-fluid rounded-end"
+                      alt="..." />
                   </div>
                 </div>
               </button>
@@ -279,9 +297,9 @@
 
     <!-- Results of year 2 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -290,11 +308,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
-              <div class="col-sm-8">
-                <!-- No image, but it would go here -->
-              </div>
+               maybe I'll add some kind of expenses breakdown here  
+              <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -305,28 +324,7 @@
       </div>
     </section>
 
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              Sponsoring a club or extracurricular activity at school can bring
-              in some extra money, but it can be a big time commitment. At the
-              same time, clubs are important for building a sense of community
-              for students.
-            </h2>
-
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!--Rhonda Quote-->
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
@@ -351,6 +349,17 @@
         <div class="col-12">
           <div class="">
             <h2 class="title">You earned tenure!</h2>
+            <p class="title">
+              Tenure provides job security for teachers who have demonstrated
+              their ability to effectively educate their students, meaning they
+              cannot be fired without due process.
+            </p>
+            <p>
+              Critics of tenure, however, argue that it can protect ineffective
+              teachers, making it difficult for schools to remove
+              underperforming teachers.
+            </p>
+
             <figure class="row justify-content-center media">
               <div class="col-sm-8">
                 <!-- Example of a video -->
@@ -371,72 +380,59 @@
       </div>
     </section>
 
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              Tenure provides job security for teachers who have demonstrated
-              their ability to effectively educate their students, meaning they
-              cannot be fired without due process.
-            </h2>
-            <h2>
-              Critics of tenure, however, argue that it can protect ineffective
-              teachers, making it difficult for schools to remove
-              underperforming teachers.
-            </h2>
-            <figure class="row justify-content-center media">
-              <div class="col-sm-8"></div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Year 3 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 3</h1>
             <h4>
               It's summer and your friends want to go traveling since you get
               the two months off. However, your budget is a little tight. What
               do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to go on vacation with your friends"
-                data-description="You had a great time, but it cost you $1,000."
+                data-description="You had a great time, but it cost you $1,000. Although having the summer off is a big incentive, a number of
+              teachers choose to teach summer school or spend a majority of
+              their vacation time preparing for the new school year."
                 data-media=""
                 data-energy="0"
-                data-motivation="5"
-                data-money="-2252.26">
-                Go on vacation
-              </button>
+                data-motivation="+5"
+                data-money="-4166">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">Go on vacation</div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to teach summer school"
-                data-description="You were hoping for a restful summer, but you figured it would be best to teach summer school to make some extra income."
-                data-media=""
+                data-description="You were hoping for a restful summer, but you figured it would be best to teach summer school to make some extra income. Although having the summer off is a big incentive, a number of
+              teachers choose to teach summer school or spend a majority of
+              their vacation time preparing for the new school year."
+                data-media="assets/stock-footage.webm"
                 data-energy="-15"
                 data-motivation="-10"
-                data-money="+1879">
-                Teach summer school
+                data-money="+1833">
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">Teach summer school</div>
+                </div>
               </button>
             </div>
           </div>
@@ -446,9 +442,9 @@
 
     <!-- Results of year 3 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -457,9 +453,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -470,64 +469,63 @@
       </div>
     </section>
 
-    <!-- Transition Card -->
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              Although having the summer off is a big incentive, a number of
-              teachers choose to teach summer school or spend a majority of
-              their vacation time preparing for the new school year.
-            </h2>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Year 4 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 4</h1>
             <h4>
               You and your partner decide to move in together. What do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
-                data-title="You decided to move into a $2,390/month apartment in South San Francisco. Good thing you're splitting!"
-                data-description="Your monthly rent is now $1,197."
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
+                data-title="You decided to move into a $2,390/month apartment in South San Francisco."
+                data-description="Good thing you're splitting! Your monthly rent is now $1,197. Many teachers working in the Bay Area commute to work. Some even
+              turn down job offers due to the high cost of living as the pay is
+              barely enough to cover it."
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="+9034">
-                Split a one-bedroom apartment in South San Francisco
-                ($2,395/month)
-              </button>
+                data-money="+8940">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">
+                    Split a one-bedroom apartment in South San Francisco
+                    ($2,395/month)
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="The cheapest place you could find in the Bay Area is in Vallejo for $1,600/month "
-                data-description="Your share of the rent is $800, not bad! But your commute sucks now and is costing you an additional $350 each month."
-                data-media=""
+                data-description="Your share of the rent is $800, not bad! But your commute sucks now and is costing you extra in transportation.Many teachers working in the Bay Area commute to work. Some even
+              turn down job offers due to the high cost of living as the pay is
+              barely enough to cover it."
+                data-media="assets/stock-footage.webm"
                 data-energy="-20"
-                data-motivation="0"
+                data-motivation="-5"
                 data-money="0">
-                Move to somewhere cheaper in the Bay Area but commute to work
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">
+                    Move to somewhere cheaper in the Bay Area but commute to
+                    work ($819/month)
+                  </div>
+                </div>
               </button>
             </div>
           </div>
@@ -537,9 +535,9 @@
 
     <!-- Results of year 4 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -548,33 +546,15 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Transition Card -->
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              Many teachers working in the Bay Area commute to work. Some even
-              turn down job offers due to the high cost of living as the pay is
-              barely enough to cover it.
-            </h2>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
               </button>
             </div>
           </div>
@@ -584,41 +564,55 @@
 
     <!-- Year 6 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 6</h1>
             <h4>
               You’re considering going back to school part-time to earn some
               additional credits to boost your salary. What do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You decided to go back to school part-time"
-                data-description="Although you're spending money and time to go back to school, your salary will increase by 2%!"
+                data-description="Although you're spending money and time to go back to school, your salary will increase by 2%! Many teachers go back to school part-time to get bumped higher on
+              the salary schedule. At most, with a BA, credential, MA/DR, and 45
+              credits, you could be making 11.5% more."
                 data-media=""
                 data-energy="-25"
                 data-motivation="0"
-                data-money="+5119">
-                Earn additional credits at school
-              </button>
+                data-money="+14823">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">Earn additional credits at school</div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You decided to not go back to school"
-                data-description="You didn't have the time anyway."
-                data-media=""
+                data-description="You didn't have the time anyway.   Many teachers go back to school part-time to get bumped higher on
+              the salary schedule. At most, with a BA, credential, MA/DR, and 45
+              credits, you could be making 11.5% more."
+                data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-10"
-                data-money="+10930">
-                Don’t go back to school
+                data-motivation="0"
+                data-money="+20582">
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">Don’t go back to school</div>
+                </div>
               </button>
             </div>
           </div>
@@ -628,9 +622,9 @@
 
     <!-- Results of year 6 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -639,9 +633,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -652,66 +649,57 @@
       </div>
     </section>
 
-    <!-- Transition Card -->
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              Many teachers go back to school part-time to get bumped higher on
-              the salary schedule. At most, with a BA, credential, MA/DR, and 45
-              credits, you could be making 11.5% more.
-            </h2>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Year 8 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 8</h1>
             <h4>
               Your colleague and closest friend is leaving SSFHS to teach at a
               nearby district. She suggests you do the same since the salary is
               much higher. What do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to stay teaching at SSFHS"
                 data-description="You're upset your friend is gone, but you'll still keep in touch. Plus, you don't want to let your students down."
                 data-media=""
                 data-energy="0"
                 data-motivation="-15"
-                data-money="+13242">
-                Stay at SSFHS
-              </button>
+                data-money="+24878">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">
+                    Stay at South San Francisco High School
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Game over!"
                 data-description="You are part of the 8% of teachers in California who are leaving their current school to move to another. You’re now able to make about $27,145 more each year and have your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS."
-                data-media=""
+                data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="0"
                 data-money="0">
-                Leave SSFHS
-                <!-- would trigger a game over -->
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">Leave to a higher paying district</div>
+                </div>
               </button>
             </div>
           </div>
@@ -721,9 +709,9 @@
 
     <!-- Results of year 8 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -732,9 +720,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -745,7 +736,7 @@
       </div>
     </section>
 
-    <!-- Transition Card -->
+    <!-- Julianne Quote -->
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
@@ -769,44 +760,59 @@
     </section>
 
     <!-- Year 9 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 9</h1>
             <h4>
               You and your partner are going to have a baby. You’re excited but
               concerned about the added expenses this will bring, especially for
               daycare. What do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to pick up a part-time job serving on the weekends"
-                data-description="You barely have any free time anymore, but the extra income is helping."
+                data-description="You barely have any free time anymore, but the extra income is helping. According to the National Center for Education Statistics (NCES),
+              about 20% of teachers also hold second jobs during the school
+              year. Teachers are also about three times as likely as other U.S.
+              workers to take on this burden."
                 data-media=""
                 data-energy="-25"
-                data-motivation="0"
-                data-money="+13480">
-                Pick up a part-time job as a server on the weekends
-              </button>
+                data-motivation="-10"
+                data-money="-2047">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">
+                    Pick up a part-time job as a server on the weekends
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Game over!"
                 data-description="You are part of the 8% of teachers in California who are leaving their current school to move to another. You’re now able to make about $28,672 more each year and have your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS."
-                data-media=""
+                data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="0"
                 data-money="0">
-                Move to a higher paying district
-                <!-- would trigger a game over -->
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">Leave to a higher paying district</div>
+                </div>
               </button>
             </div>
           </div>
@@ -816,9 +822,9 @@
 
     <!-- Results of year 9 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -827,9 +833,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -840,67 +849,62 @@
       </div>
     </section>
 
-    <!-- Transition Card -->
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              According to the National Center for Education Statistics (NCES),
-              about 20% of teachers also hold second jobs during the school
-              year. Teachers are also about three times as likely as other U.S.
-              workers to take on this burden.
-            </h2>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Question 11 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 11</h1>
             <h4>
               Your partner just lost their job as well as their health insurance
               for themselves and your child. What do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to pay for your partner's health insurance out of pocket"
-                data-description="This will cost you about $800/month through the district."
+                data-description="This will cost you about $800/month through the district. One reason that teachers at SSFHS leave is for a better benefits
+              package. Some higher paying districts are able to afford to offer
+              a covered family plan, which can be tempting for teachers who are
+              growing their families."
                 data-media=""
                 data-energy="0"
                 data-motivation="-10"
-                data-money="-48304">
-                Pay out of pocket for your family's health insurance
-              </button>
+                data-money="-48199">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">
+                    Pay out of pocket for your family's health insurance
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Game over!"
-                data-description="You’re now able to make $33,671 more each year and have you and your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS.."
-                data-media=""
+                data-description="You’re now able to make $33,671 more each year and have you and your family’s health insurance covered. Although you feel more financially secure and enjoy your new job, part of you misses your colleagues and the community at SSFHS."
+                data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="0"
                 data-money="0">
-                Transfer to a higher paying district and get your family's
-                health insurance covered
-                <!-- would trigger a game over -->
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">
+                    Transfer to a higher paying district and get your family's
+                    health insurance covered
+                  </div>
+                </div>
               </button>
             </div>
           </div>
@@ -910,9 +914,9 @@
 
     <!-- Results of question 11 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -921,9 +925,12 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 OK, continue
@@ -934,34 +941,13 @@
       </div>
     </section>
 
-    <!-- Transition Card -->
-    <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
-            <h2 class="title">
-              One reason that teachers at SSFHS leave is for a better benefits
-              package. Some higher paying districts are able to afford to offer
-              a covered family plan, which can be tempting for teachers who are
-              growing their families.
-            </h2>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Year 14 -->
+
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
             <h1>Year 14</h1>
             <h4>
               You’re feeling burnout from work. You considered transferring to a
@@ -969,34 +955,44 @@
               carry over, and you don’t want to start over somewhere new. What
               do you do?
             </h4>
-            <figure class="row justify-content-center">
-              <div class="col-sm-8">
-                <!-- no image, but would go here if you wanted one -->
-              </div>
-            </figure>
-            <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Game over!"
                 data-description="Your energy and motivation is fairly low, and you’re barely making ends meet. However, you’re still at the school you started in and have grown with the community."
                 data-media=""
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="0"
                 data-money="0">
-                Stay at SSFHS
-                <!-- would trigger a game over -->
-              </button>
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">
+                    Stay at South San Francisco High School
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
               <button
-                class="btn btn-lg btn-group btn-outline-light d-block"
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Game over!"
                 data-description="You decided to take a break from teaching due to burnout. You’re considering going into another field."
-                data-media=""
+                data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="0"
                 data-money="0">
-                Leave the profession
-                <!-- would trigger a game over -->
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">Leave the profession</div>
+                </div>
               </button>
             </div>
           </div>
@@ -1006,9 +1002,9 @@
 
     <!-- Results of year 14 -->
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
+      class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -1017,12 +1013,15 @@
               This description will automatically change based on previous
               choice
             </p>
+            <!--
             <figure class="row justify-content-center media">
+               maybe I'll add some kind of expenses breakdown here  
               <div class="col-sm-8"></div>
             </figure>
+            -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
-                Play again?
+                OK, continue
               </button>
             </div>
           </div>
@@ -1036,8 +1035,8 @@
       <div class="row">
         <div class="col-12">
           <div class="">
-            <h1 class="title">Game over!</h1>
-            <p class="description">Some info summarizing the whole thing.</p>
+            <h1 class="title">Thanks for playing!</h1>
+            <!--<p class="description">Some info summarizing the whole thing.</p>-->
             <figure class="row justify-content-center media">
               <div class="col-sm-8">
                 <!-- Example of a video -->
@@ -1222,22 +1221,14 @@
     <script src="js/jquery.csv.min.js"></script>
     <script>
       jQuery(document).ready(function ($) {
-        
-        
         const the_game = {
-          
-          
-          
-          
           //change these if you decide on different variables
-          variables : {
-            
-            
-            "money" : {
-              startingValue: 59784,
-              currentValue : 59784, //just a placeholder that will programmaticaly change
+          variables: {
+            money: {
+              startingValue: 69784,
+              currentValue: 69784, //just a placeholder that will programmaticaly change
               maxValue: 100000,
-              gameOverWhen : 0, //game over when it reaches this value
+              gameOverWhen: 0, //game over when it reaches this value
               gameOverMessage: {
                 title: "Game Over!",
                 description:
@@ -1245,18 +1236,20 @@
                 media: "http://via.placeholder.com/2600x1400.jpg",
                 button_message: "Play Again?"
               },
-              format: function(val){ 
-               return val.toLocaleString(undefined, {style: "currency",currency: "USD", maximumFractionDigits: 0 })
+              format: function (val) {
+                return val.toLocaleString(undefined, {
+                  style: "currency",
+                  currency: "USD",
+                  maximumFractionDigits: 0
+                });
               }
             },
-            
-            
-            
-            "energy":{
+
+            energy: {
               startingValue: 100,
-              currentValue : 100, //just a placeholder that will programmaticaly change
+              currentValue: 100, //just a placeholder that will programmaticaly change
               maxValue: 100,
-              gameOverWhen : 0, //game over when it reaches this value
+              gameOverWhen: 0, //game over when it reaches this value
               gameOverMessage: {
                 title: "Game Over!",
                 description:
@@ -1264,19 +1257,17 @@
                 media: "http://via.placeholder.com/2600x1400.jpg",
                 button_message: "Play Again?"
               },
-              format: function(val){
+              format: function (val) {
                 let v = val > this.maxValue ? this.maxValue : val;
                 return v + "%";
               }
-            }, 
-            
-            
-            
-            "motivation": {
+            },
+
+            motivation: {
               startingValue: 100,
-              currentValue : 100, //just a placeholder that will programmaticaly change
+              currentValue: 100, //just a placeholder that will programmaticaly change
               maxValue: 100,
-              gameOverWhen : 0, //game over when it reaches this value
+              gameOverWhen: 0, //game over when it reaches this value
               gameOverMessage: {
                 title: "Game Over!",
                 description:
@@ -1284,125 +1275,105 @@
                 media: "http://via.placeholder.com/2600x1400.jpg",
                 button_message: "Play Again?"
               },
-              format: function(val){
+              format: function (val) {
                 let v = val > this.maxValue ? this.maxValue : val;
                 return v + "%";
               }
             }
           },
 
-          
-          
-          
           //overall options
           options: {
             transitionSpeed: 150, //speed of page transitions in milliseconds
-            firstTime : true,
-            gameOver  : false,
+            firstTime: true,
+            gameOver: false,
             whenDoneGoto: "header"
           },
-          
+
           //holder for next section
           nextSection: {},
-          
-          
-          
-          
-          
-          
+
           //function that kicks everything off
-          init: function(){
-            
+          init: function () {
             const that = this;
-            
+
             //set up progress bar along the top
             this.setUpProgressBar();
-            
+
             //add easing functions
-            $.easing.easeOutExpo  = x => x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
-            $.easing.easeOutQuart = x => 1 - Math.pow(1 - x, 4);
-            
+            $.easing.easeOutExpo = (x) =>
+              x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+            $.easing.easeOutQuart = (x) => 1 - Math.pow(1 - x, 4);
+
             //set up handler for launch button click
-            $("#launch-button").on("click", function() { that.onLaunchButtonPress(this) });
-            
+            $("#launch-button").on("click", function () {
+              that.onLaunchButtonPress(this);
+            });
+
             //go to next section when clicking any button.
-            $("button", "section").on("click", function() { that.setUpNextSection(this) });
-            
+            $("button", "section").on("click", function () {
+              that.setUpNextSection(this);
+            });
           },
-          
-          
-          
-          
+
           //adds a new --scroll CSS property that is assigned the number of pixels scrolled down.
-          setUpProgressBar: function(){
+          setUpProgressBar: function () {
             window.addEventListener(
               "scroll",
               () => {
                 document.body.style.setProperty(
                   "--scroll",
-                  window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                  window.pageYOffset /
+                    (document.body.offsetHeight - window.innerHeight)
                 );
               },
               false
             );
           },
-          
-          
-          
-          
-          
-          
+
           //pressing the initial launch button
           // {obj} - the jquery button object calling this
-          onLaunchButtonPress : function(obj){
-            
+          onLaunchButtonPress: function (obj) {
             //bug fix when animating scroll, button stays focused.
             $(obj).blur();
-            
+
             //scroll to first <section> tag
             this.scrollToSection($("section").eq(0));
-            
           },
-            
-          
-          
-          
-          
-          
-          
+
           //change the donut arc lengths from their current values
-          changeDonutArcLength: function(chartName, adjustValueBy){
-            
+          changeDonutArcLength: function (chartName, adjustValueBy) {
             //each variable is in its own div
             const chartHolder = $("#" + chartName);
-            
+
             //convenience get max value possible
             const max = this.variables[chartName].maxValue;
-            
+
             //add adjusted value
-            let newValue = this.variables[chartName].currentValue + parseInt(adjustValueBy);
-            
+            let newValue =
+              this.variables[chartName].currentValue + parseInt(adjustValueBy);
+
             //keep it from exceeding maxValue
-            if(newValue > this.variables[chartName].maxValue){
+            if (newValue > this.variables[chartName].maxValue) {
               newValue = this.variables[chartName].maxValue;
             }
-            
+
             //if too low, trigger game over
-            if(newValue < this.variables[chartName].gameOverWhen){
+            if (newValue < this.variables[chartName].gameOverWhen) {
               newValue = this.variables[chartName].gameOverWhen;
               this.gameOver(chartName);
             }
-            
+
             //get the arc offset value
             svg = chartHolder.find("svg");
             //with / 2 - strokeWith
             let radius = 20;
             let arcLength = 2 * Math.PI * radius;
             let arcOffset = arcLength * ((max - parseInt(newValue)) / max);
-            
+
             //store the current value
             this.variables[chartName].currentValue = newValue;
-            
+
             //set arc
             chartHolder
               .find(".svg-indicator-indication")
@@ -1412,87 +1383,69 @@
               .css("stroke-dashoffset", arcOffset);
 
             //set the text
-            chartHolder.find(".svg-indicator-value").text(this.variables[chartName].format(newValue));
-            
+            chartHolder
+              .find(".svg-indicator-value")
+              .text(this.variables[chartName].format(newValue));
           },
-          
-          
-          
-          
-          
-          
-          
+
           //initial setup of donut charts. Also resets them to their initial setting
-          initDonutCharts : function(){
-            
+          initDonutCharts: function () {
             $("#stats").removeClass("visually-hidden");
-            
+
             //iterate through variables, set donuts charts to their starting values
-            for (const [key, value] of Object.entries(this.variables)){
-              this.variables[key].currentValue = this.variables[key].startingValue;
+            for (const [key, value] of Object.entries(this.variables)) {
+              this.variables[key].currentValue =
+                this.variables[key].startingValue;
               this.changeDonutArcLength(key, 0);
-            };
+            }
           },
-          
-          
-          
-          
-          
-          
+
           //extra values from data attributes (i.e. data-money="-100") and set donut charts.
-          extractValuesAndSetDonutCharts : function(obj){
- 
-            for (const [key, value] of Object.entries(this.variables)){
-              if($(obj).attr("data-" + key)){
+          extractValuesAndSetDonutCharts: function (obj) {
+            for (const [key, value] of Object.entries(this.variables)) {
+              if ($(obj).attr("data-" + key)) {
                 this.changeDonutArcLength(key, $(obj).data(key));
               }
             }
-            
           },
-          
-          
-          
-          
-          
-          
+
           //Clicking on a button within any section sets up next section
           //{obj} - The button clicked, with data attributes containing info for next section
-          setUpNextSection: function(obj){
-            
+          setUpNextSection: function (obj) {
             //bug fix when animating scroll, button stays focused.
             $(obj).blur();
-            
+
             //launch donut charts if this is first time running
-            if(this.options.firstTime){
+            if (this.options.firstTime) {
               this.options.firstTime = false;
               this.initDonutCharts();
             }
-            
+
             //store next section for use later
             this.nextSection = $(obj).parents("section").next("section");
-            
+
             //get data attributes (i.e. data-money="-1000") and set donut charts accordingly.
             this.extractValuesAndSetDonutCharts(obj);
-            
+
             //don't continue to setting next section if we hit game over
-            if(this.options.gameOver === true){
+            if (this.options.gameOver === true) {
               return;
             }
-            
+
             //if they stored a data-title attribute, set it on the next section
             if (typeof $(obj).data("title") !== "undefined") {
               this.nextSection
                 .find(".title")
                 .text(this.replaceTemplateLiterals($(obj).data("title")));
             }
-            
+
             //if they stored data-description attribute, set it on next section
             if (typeof $(obj).data("description") !== "undefined") {
               this.nextSection
                 .find(".description")
                 .text(this.replaceTemplateLiterals($(obj).data("description")));
             }
-            
+
             //if they stored a data-media attribute
             if (typeof $(obj).data("media") !== "undefined") {
               this.parseDataMediaAttribute(obj);
@@ -1500,203 +1453,180 @@
               //it's empty, zero it out
               this.nextSection.find(".media div").html("");
             }
-            
+
             //ready to go to next section
             this.scrollToSection(this.nextSection);
           },
-          
-          
-          
-          
-          scrollToSection: function(section, callback=function(){}){
 
+          scrollToSection: function (section, callback = function () {}) {
             $("html,body")
               .animate(
                 { scrollTop: section.offset().top },
-                { duration: this.transitionSpeed, queue: false, easing: "easeOutExpo" }
+                {
+                  duration: this.transitionSpeed,
+                  queue: false,
+                  easing: "easeOutExpo"
+                }
               )
               .promise()
               .done(function () {
-              
                 //bug fix because animating scroll done() fires multiple times. This will ensure one activation
                 var scrollTop = $(window).scrollTop();
                 var id = window.setInterval(function () {
                   if (scrollTop == $(window).scrollTop()) {
                     window.clearInterval(id);
-                    
+
                     callback();
-                    
                   } else {
                     scrollTop = $(window).scrollTop();
                   }
                 }, 70);
               });
           },
-          
-          
-          
-          
-          
+
           //trigger game cover
           // {variableKey} - which variable ran out of juice
-          gameOver: function(variableKey){
-            
+          gameOver: function (variableKey) {
             this.options.gameOver = true;
-            
+
             //change title of next section
             this.nextSection
               .find(".title")
-              .text(this.replaceTemplateLiterals(this.variables[variableKey].gameOverMessage.title));
-            
+              .text(
+                this.replaceTemplateLiterals(
+                  this.variables[variableKey].gameOverMessage.title
+                )
+              );
+
             //change description of next section
             this.nextSection
-              .find(".description") .text(this.replaceTemplateLiterals(this.variables[variableKey].gameOverMessage.description));
-            
+              .find(".description")
+              .text(
+                this.replaceTemplateLiterals(
+                  this.variables[variableKey].gameOverMessage.description
+                )
+              );
+
             //hide existing button
             this.nextSection
               .find("button")
               .removeClass("d-block")
               .addClass("d-none");
-            
-            //swap or add media 
+
+            //swap or add media
             this.nextSection
               .find(".media div")
-              .html(this.parseMediaString(this.variables[variableKey].gameOverMessage.media));
-            
+              .html(
+                this.parseMediaString(
+                  this.variables[variableKey].gameOverMessage.media
+                )
+              );
+
             this.createGameOverButton(variableKey);
-            
           },
-          
-          
-          
-          
-          
-          
+
           //create temporary game over button, when clicked, erase.
-          createGameOverButton: function(variableKey){
-            
+          createGameOverButton: function (variableKey) {
             const that = this;
-            
+
             const gameOver_btn = $("<button />")
               .addClass(
                 "btn btn-lg btn-group btn-outline-light d-block gameover"
               )
               .html(this.variables[variableKey].gameOverMessage.button_message);
-            
+
             this.nextSection.find(".form-group").append(gameOver_btn);
-            
+
             //create click handler
-            gameOver_btn.on("click", function() { that.clickHandlerForGameOverButton(this) });
-            
+            gameOver_btn.on("click", function () {
+              that.clickHandlerForGameOverButton(this);
+            });
+
             //scroll to next section
             this.scrollToSection(this.nextSection);
-            
           },
-          
-          
-          
-          
-          
+
           //click handler for game over button
-          clickHandlerForGameOverButton: function(obj, goto){
-            
+          clickHandlerForGameOverButton: function (obj, goto) {
             const that = this;
-            
+
             $("#stats").addClass("visually-hidden");
-            
-            this.scrollToSection($(this.options.whenDoneGoto), function(){
-              
+
+            this.scrollToSection($(this.options.whenDoneGoto), function () {
               //reappear old continue button
               that.nextSection
                 .find(".button")
                 .removeClass("d-none")
                 .addClass("d-block");
-              
+
               //remove this gameover button
               obj.remove();
-              
+
               //reset donut charts
               //that.initDonutCharts();
               that.options.firstTime = true;
-              
+
               //turn off game over trigger
               that.options.gameOver = false;
-              
             });
-             
           },
-          
-          
-          
 
-          
           //data media attribute
           //{obj} - button object that was clicked and has data-media attribute
-          parseDataMediaAttribute: function(obj){
-            
+          parseDataMediaAttribute: function (obj) {
             //if they stored data-media attribute
             const media = $(obj).data("media");
-            
+
             console.log(media);
-        
+
             this.nextSection
               .find(".media div")
               .html(this.parseMediaString(media));
-            
           },
-            
-            
-            
-          
-          
+
           //return correct media HTML code
           //{media} - string of media value, like URL to jpg or mp4
-          parseMediaString: function(media){
-            
+          parseMediaString: function (media) {
             if (media.match(/\.(jpg|png|gif|jpeg|svg)$/gi)) {
               return '<img src="' + media + '" class="img-fluid">';
-            } else 
-            if (media.match(/\.(mp4|webm|ogg)$/gi)) {
-              return '<video muted autoplay src="' + media + '" class="img-fluid"></video>';
-            } else 
-            if (media.match(/\.(mp3|mpa|oga)$/gi)) {
-              return '<audio controls src="' + media + '" width="100%"></audio>';
-            } else  
-            if(media == ""){
-              return '';
-            } else
+            } else if (media.match(/\.(mp4|webm|ogg)$/gi)) {
+              return (
+                '<video muted autoplay src="' +
+                media +
+                '" class="img-fluid"></video>'
+              );
+            } else if (media.match(/\.(mp3|mpa|oga)$/gi)) {
+              return (
+                '<audio controls src="' + media + '" width="100%"></audio>'
+              );
+            } else if (media == "") {
+              return "";
+            }
             //assum its an iframe
-            {
-              return '<iframe src="' + media + '" scrolling="no" frameborder="0" width="100%" height="500"></iframe>'
+            else {
+              return (
+                '<iframe src="' +
+                media +
+                '" scrolling="no" frameborder="0" width="100%" height="500"></iframe>'
+              );
             }
           },
-          
-          
-          
-          
-          
+
           //replace template literals like {money} with the actual money value
-          replaceTemplateLiterals: function(template="") {
+          replaceTemplateLiterals: function (template = "") {
             const data = {};
-            for (const [key, value] of Object.entries(this.variables)){
+            for (const [key, value] of Object.entries(this.variables)) {
               data[key] = this.variables[key].format(value.currentValue);
             }
             const pattern = /{\s*(\w+?)\s*}/g; // {property}
             return template.replace(pattern, (_, token) => data[token] || "");
-          },
-          
-
+          }
         };
-        
-        
+
         the_game.init();
-          
-      
-        });
-        
+      });
 
-
-        /*
+      /*
         
        
         
