@@ -53,10 +53,7 @@
               </h1>
               <h4>Experience the Realities of Teaching in the Bay Area</h4>
               <p class="text-start d-block">
-                Every year, about 14% of high school teachers who work in South
-                San Francisco Unified School District leave. Play this game to
-                understand the real challenges that high school teachers in the
-                Bay Area face throughout their career.
+                South San Francisco Unified School District loses nearly 14% of its high school teachers annually. Want to know why? Play this game and gain a deeper understanding of the challenges that Bay Area educators face on a daily basis.
               </p>
               <button id="launch-button" class="btn btn-outline-light">
                 Start Game!
@@ -121,11 +118,11 @@
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to live in a studio apartment in South San Francisco"
-                data-description="After annual expenses, your first year income just decreased by $65,610! You now have {money}. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
+                data-description="After annual expenses, you now have {money}. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="-65610">
+                data-money="-24636">
                 <img
                   src="assets/button_example_1.png"
                   class="card-img-top"
@@ -218,7 +215,71 @@
 -->
 
     <!-- Year 2 -->
+    <section
+      class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-10">
+          <div class="row">
+            <h1>Year 2</h1>
+            <h4>
+              You just became advisor of a new student club that is unique to
+              the school's community. Although you’re happy to do it, you
+              realize you now have a lot on your plate. What do you do?
+            </h4>
+            <p>
+              Staying as a club advisor earns you an additional stipend of
+              $2,339, but it would take more time out of your day.
+            </p>
+            <div class="col-6">
+              <button
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
+                data-title="You chose to stay as club advisor"
+                data-description="Your students are ecstatic, but your energy levels have depleted a bit. Sponsoring a club or extracurricular activity at school can bring
+              in some extra money, but it can be a big time commitment. At the
+              same time, clubs are important for building a sense of community
+              for students."
+                data-media=""
+                data-energy="00"
+                data-motivation="-15"
+                data-money="-5715.20">
+                <img
+                  src="assets/button_example_1.png"
+                  class="card-img-top"
+                  alt="..." />
 
+                <div class="card-body">
+                  <div class="card-text">Stay as the club advisor</div>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
+                data-title="You chose to let the club dissolve"
+                data-description="You get your Tuesday afternoons back, but your students seem bummed out."
+                data-media="assets/stock-footage.webm"
+                data-energy="0"
+                data-motivation="-5"
+                data-money="0">
+                <img
+                  src="assets/button_example_2.png"
+                  class="card-img-top"
+                  alt="..." />
+
+                <div class="card-body">
+                  <div class="card-text">
+                    Quit as the club advisor, letting the club dissolve
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second style-->
+    <!--
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
@@ -294,6 +355,7 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- Results of year 2 -->
     <section
@@ -393,6 +455,10 @@
               the two months off. However, your budget is a little tight. What
               do you do?
             </h4>
+            <p>
+              Teaching summer school would earn you about $5,000, but it takes
+              time off from your vacation time.
+            </p>
             <div class="col-6">
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
@@ -577,7 +643,7 @@
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You decided to go back to school part-time"
-                data-description="Although you're spending money and time to go back to school, your salary will increase by 2%! Many teachers go back to school part-time to get bumped higher on
+                data-description="Although you're spending money and time to go back to school, your salary will increase by 2%. Many teachers go back to school part-time to get bumped higher on
               the salary schedule. At most, with a BA, credential, MA/DR, and 45
               credits, you could be making 11.5% more."
                 data-media=""
@@ -1101,7 +1167,7 @@
             text-anchor="middle"
             font-size="9"
             font-family="sans-serif">
-            $10,000
+            $0
           </text>
           <text
             x="25"
@@ -1225,8 +1291,8 @@
           //change these if you decide on different variables
           variables: {
             money: {
-              startingValue: 69784,
-              currentValue: 69784, //just a placeholder that will programmaticaly change
+              startingValue: 59000,
+              currentValue: 59000, //just a placeholder that will programmaticaly change
               maxValue: 100000,
               gameOverWhen: 0, //game over when it reaches this value
               gameOverMessage: {
