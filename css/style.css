@@ -60,24 +60,37 @@ header h1 {
 }
 
 /**** DONUT CHART STYLES ****/
-
-.donut-chart {
-  /* adjust size here as needed. They won't distort and maintain ratio. */
-  width: 60px;
-  height: 80px;
+.donut-chart{
   font-family: Roboto, sans-serif;
 }
 
-.donut-chart text {
+.donut-chart-small {
+  /* adjust size here as needed for the small charts. They won't distort and maintain ratio. */
+  width: 80px;
+  height: 100px;
+}
+
+.donut-chart-big{
+  width:100%;
+  height:150px;
+}
+
+.donut-chart-colors text {
   fill: #ccc; /* chart text color */
 }
 
-.donut-chart svg > circle {
+.donut-chart-colors svg > circle {
   stroke: #414a57; /* circle track color */
 }
 
-.donut-chart svg g > circle {
+.donut-chart-colors svg g > circle {
   stroke: #f5a261; /* circle glow color */
+}
+
+#stats{
+  transform:translateY(-50%);
+  background-color: rgba(50,50,50,0.9);
+  
 }
 
 /**** BACKGROUNDS ****/

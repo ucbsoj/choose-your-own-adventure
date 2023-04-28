@@ -71,27 +71,184 @@
 
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12">
-          <div class="">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
+
             <h1 class="title">About Game</h1>
-            <h5>
+            <h5 class="text-start">
               This game is based on real reporting and interviews conducted with
               former and current teachers at South San Francisco High School.
             </h5>
-            <h6>Variables Impacted:</h6>
+    
+            
+            <!-- Adjust size by changing the stroke-width. There are six of them. -->
+          
+            <div class="starting-donut-charts row d-flex flex-inline">
+
+              <!-- Money -->
+              <div class="money col-4 donut-chart donut-chart-colors">
+                <svg
+                  class="svg-indicator"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 50 70"
+                  aria-label="Money indicator">
+                  <circle
+                    class="svg-indicator-track"
+                    cx="25"
+                    cy="25"
+                    r="20"
+                    fill="transparent"
+                    stroke-width="5px"
+                    stroke="#ddd" />
+                  <g transform="rotate(-90,25,25)">
+                    <circle
+                      class="svg-indicator-indication"
+                      cx="25"
+                      cy="25"
+                      r="20"
+                      fill="transparent"
+                      stroke-width="5px"
+                      stroke="#999"
+                      stroke-dasharray="125.6"
+                      style="stroke-dashoffset: 125.6" />
+                  </g>
+                  <text
+                    class="svg-indicator-value"
+                    x="25"
+                    y="26"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    $0
+                  </text>
+                  <text
+                    x="25"
+                    y="58"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    Money
+                  </text>
+                </svg>
+              </div>
+
+              <!-- Energy -->
+              <div class="energy col-4 donut-chart donut-chart-colors">
+                <svg
+                  class="svg-indicator"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 50 70"
+                  aria-label="Engergy indicator">
+                  <circle
+                    class="svg-indicator-track"
+                    cx="25"
+                    cy="25"
+                    r="20"
+                    fill="transparent"
+                    stroke-width="5px"
+                    stroke="#ddd" />
+                  <g transform="rotate(-90,25,25)">
+                    <circle
+                      class="svg-indicator-indication"
+                      cx="25"
+                      cy="25"
+                      r="20"
+                      fill="transparent"
+                      stroke-width="5px"
+                      stroke="#999"
+                      stroke-dasharray="125.6"
+                      style="stroke-dashoffset: 125.6" />
+                  </g>
+                  <text
+                    class="svg-indicator-value"
+                    x="25"
+                    y="26"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    100%
+                  </text>
+                  <text
+                    x="25"
+                    y="58"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    Energy
+                  </text>
+                </svg>
+              </div>
+
+              <!-- Motivation -->
+              <div class="motivation col-4 donut-chart donut-chart-colors">
+                <svg
+                  class="svg-indicator"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 50 70"
+                  aria-label="Motivation indicator">
+                  <circle
+                    class="svg-indicator-track"
+                    cx="25"
+                    cy="25"
+                    r="20"
+                    fill="transparent"
+                    stroke-width="5px"
+                    stroke="#ddd" />
+                  <g transform="rotate(-90,25,25)">
+                    <circle
+                      class="svg-indicator-indication"
+                      cx="25"
+                      cy="25"
+                      r="20"
+                      fill="transparent"
+                      stroke-width="5px"
+                      stroke="#999"
+                      stroke-dasharray="125.6"
+                      style="stroke-dashoffset: 125.6" />
+                  </g>
+                  <text
+                    class="svg-indicator-value"
+                    x="25"
+                    y="26"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    100%
+                  </text>
+                  <text
+                    x="25"
+                    y="58"
+                    alignment-baseline="middle"
+                    text-anchor="middle"
+                    font-size="9"
+                    font-family="sans-serif">
+                    Motivation
+                  </text>
+                </svg>
+              </div>
+              
+            </div><!-- end .row -->
+            
             <p class="intro-paragraph">
-              <span class="highlight-green">Money</span>: To save up for a
+              <strong>Money</strong>: To save up for a
               future house, you annually deposit your remaining funds into this
               savings account dedicated to that goal. You currently have $10,000
               that you saved up during college.
             </p>
             <p class="intro-paragraph">
-              <span class="highlight-red">Energy</span>: The energy and time
+              <strong>Energy</strong>: The energy and time
               spent on things related to your job.
             </p>
             <p class="intro-paragraph">
-              <span class="highlight-blue">Motivation</span>: This refers to
+              <strong>Motivation</strong>: This refers to
               your motivation to stay in the teaching profession.
             </p>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
@@ -101,7 +258,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Year 1 -- EXAMPLE OF IMAGE CARDS -->
@@ -109,7 +265,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 1</h1>
             <p>
@@ -121,11 +277,14 @@
             <div class="col-6">
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
-                data-title="Great choice! You chose to live in a studio apartment in South San Francisco. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent."
+                data-title="Great choice! You chose to live in a studio apartment in South San Francisco. The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent. At the end of this year, you'll have {money} left over!"
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="-24636">
+                data-money="0"
+                data-continuing-expense="-47000"
+                data-year="1"
+              >
                 <img
                   src="assets/apartment.svg"
                   class="card-img-top"
@@ -145,8 +304,11 @@
                 data-description="Smart move! You chose to live with your parents. Luckily, they’ll let you stay for free."
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
-                data-motivation="-5"
-                data-money="0">
+                data-motivation="-80"
+                data-money="0"
+                data-year="1"
+                data-continuing-expense="-12000"
+              >
                 <img
                   src="assets/button_example_2.png"
                   class="card-img-top"
@@ -184,7 +346,9 @@
             </figure>
             -->
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-light d-block"
+                data-money="61000"        
+              >
                 OK, continue
               </button>
             </div>
@@ -194,16 +358,14 @@
     </section>
 
     <!-- Transition Card -->
-    <!--
+    
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h2 class="title">
-              The average rent for a one-bedroom apartment in South San
-              Francisco is $2,395. That means 48% of your monthly income would
-              be going towards your rent.
+              Your yearly salary went up! You got a partial raise because of the union contract. In year two, with any saving or expenses, you'll have {money}.
             </h2>
 
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
@@ -215,13 +377,13 @@
         </div>
       </div>
     </section>
--->
+
 
     <!-- Year 2 -->
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 2</h1>
             <h4>
@@ -241,7 +403,10 @@
                 data-media=""
                 data-energy="00"
                 data-motivation="-15"
-                data-money="-5715.20">
+                data-money="-5715.20"
+                data-continuing-expense="250"
+                data-year="2"
+              >
                 <img
                   src="assets/button_example_1.png"
                   class="card-img-top"
@@ -285,7 +450,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row justify-content-center">
             <h1>Year 2</h1>
             <h4>
@@ -363,7 +528,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -392,7 +557,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h2 class="title">“When a teacher leaves, a program can leave.”</h2>
             <h5>- Rhonda Clements, SSFHS History Teacher</h5>
@@ -411,7 +576,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h2 class="title">You earned tenure!</h2>
             <p class="title">
@@ -452,7 +617,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 3</h1>
             <h4>
@@ -472,7 +637,8 @@
                 data-media=""
                 data-energy="0"
                 data-motivation="+5"
-                data-money="-4166">
+                data-money="-4166"
+                data-continuing-expense="1000">
                 <img
                   src="assets/button_example_1.png"
                   class="card-img-top"
@@ -511,7 +677,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -541,7 +707,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 4</h1>
             <h4>
@@ -600,7 +766,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -629,7 +795,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 6</h1>
             <h4>
@@ -687,7 +853,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -717,7 +883,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 8</h1>
             <h4>
@@ -778,7 +944,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -807,7 +973,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h2 class="title">
               “It’s a sense of community with the teachers, with the students,
@@ -831,7 +997,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 9</h1>
             <h4>
@@ -892,7 +1058,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -922,7 +1088,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 11</h1>
             <h4>
@@ -985,7 +1151,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -1015,7 +1181,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="row">
             <h1>Year 14</h1>
             <h4>
@@ -1073,7 +1239,7 @@
     <section
       class="orange-background container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-xxl-6">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">
               This title will automatically change based on previous choice
@@ -1102,7 +1268,7 @@
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h1 class="title">Thanks for playing!</h1>
             <!--<p class="description">Some info summarizing the whole thing.</p>-->
@@ -1133,9 +1299,9 @@
 
     <div
       id="stats"
-      class="position-fixed top-0 start-0 mt-1 container d-flex visually-hidden">
+      class="position-fixed top-50 start-0 p-2 rounded-end d-flex flex-column visually-hidden">
       <!-- Money -->
-      <div id="money" class="position-relative donut-chart">
+      <div id="money" class="position-relative donut-chart donut-chart-colors donut-chart-small">
         <svg
           class="svg-indicator"
           width="100%"
@@ -1185,7 +1351,7 @@
       </div>
 
       <!-- Energy -->
-      <div id="energy" class="position-relative donut-chart">
+      <div id="energy" class="position-relative donut-chart donut-chart-colors donut-chart-small">
         <svg
           class="svg-indicator"
           width="100%"
@@ -1235,7 +1401,7 @@
       </div>
 
       <!-- Motivation -->
-      <div id="motivation" class="position-relative donut-chart">
+      <div id="motivation" class="position-relative donut-chart donut-chart-colors donut-chart-small">
         <svg
           class="svg-indicator"
           width="100%"
@@ -1296,7 +1462,8 @@
             money: {
               startingValue: 59000,
               currentValue: 59000, //just a placeholder that will programmaticaly change
-              maxValue: 100000,
+              maxValue: 200000,
+              continuingExpense: 0, //holder for continuing expenses
               gameOverWhen: 0, //game over when it reaches this value
               gameOverMessage: {
                 title: "Game Over!",
@@ -1356,7 +1523,8 @@
             transitionSpeed: 150, //speed of page transitions in milliseconds
             firstTime: true,
             gameOver: false,
-            whenDoneGoto: "header"
+            whenDoneGoto: "header",
+            currentYear: 0
           },
 
           //holder for next section
@@ -1404,10 +1572,44 @@
           // {obj} - the jquery button object calling this
           onLaunchButtonPress: function (obj) {
             //bug fix when animating scroll, button stays focused.
-            $(obj).blur();
+            $(obj).blur();            
 
+            const that = this;
+            
             //scroll to first <section> tag
-            this.scrollToSection($("section").eq(0));
+            this.scrollToSection($("section").eq(0), function(){
+              that.setUpBigExplainerDonutCharts(this);
+            });
+          },
+          
+          setUpBigExplainerDonutCharts: function(){
+            //animate the intro donut charts
+            for (const [key, value] of Object.entries(this.variables)) {
+              this.variables[key].currentValue = this.variables[key].startingValue;
+
+              let max = this.variables[key].maxValue;
+              let newValue = this.variables[key].currentValue;
+              //set initial donut charts
+              let radius = 20;
+              let arcLength = 2 * Math.PI * radius;
+              let arcOffset = arcLength * ((max - parseInt(newValue)) / max);
+
+              const chartHolder = $("." + key, ".starting-donut-charts");
+
+              //set arc
+              chartHolder
+                .find(".svg-indicator-indication")
+                .css("stroke-dasharray", arcLength);
+              chartHolder
+                .find(".svg-indicator-indication")
+                .css("stroke-dashoffset", arcOffset);
+
+              //set the text
+              chartHolder
+                .find(".svg-indicator-value")
+                .text(this.variables[key].format(newValue));
+            
+            }
           },
 
           //change the donut arc lengths from their current values
@@ -1471,9 +1673,27 @@
 
           //extra values from data attributes (i.e. data-money="-100") and set donut charts.
           extractValuesAndSetDonutCharts: function (obj) {
+            
+            //check if there is an update to continuing expenses
+            this.checkContinuingExpenses(obj);
+            
             for (const [key, value] of Object.entries(this.variables)) {
               if ($(obj).attr("data-" + key)) {
-                this.changeDonutArcLength(key, $(obj).data(key));
+                if(key == "money" && typeof $(obj).attr("data-year") != 'undefined'){
+                  this.changeDonutArcLength(key, parseInt($(obj).data(key)) + this.variables.money.continuingExpense);
+                } else {
+                  this.changeDonutArcLength(key, parseInt($(obj).data(key)));
+                }
+              }
+            }
+          },
+          
+          
+          //Set continuing expenses
+          checkContinuingExpenses: function(obj){
+            if(typeof $(obj).attr("data-continuing-expense") !== 'undefined'){
+              if(parseInt($(obj).attr("data-continuing-expense")) !== 0){
+                this.variables.money.continuingExpense += parseInt($(obj).attr("data-continuing-expense"));
               }
             }
           },
@@ -1528,6 +1748,9 @@
           },
 
           scrollToSection: function (section, callback = function () {}) {
+            
+            //section.find(".title").html(this.replaceTemplateLiterals(section.find(".title")))
+            
             $("html,body")
               .animate(
                 { scrollTop: section.offset().top },
