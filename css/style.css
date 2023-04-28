@@ -18,22 +18,18 @@
   font-weight: bold;
 }
 
-
 /*** OVERALL STYLES ****/
 
-
-body{
-  background-color: #22252A;
+body {
+  background-color: #22252a;
   color: #ccc;
   font-family: Roboto, sans-serif;
 }
 
-
-
 /**** HEADER STYLES ****/
 
-header{
-  background-image: url('../assets/hero.png');
+header {
+  background-image: url("../assets/signhill.png");
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -41,53 +37,53 @@ header{
   color: #cccccc;
 }
 
-header .shade{
-  background-color: rgba(0,0,0,0.7);
+/*
+header .shade {
+  background-color: rgba(0, 0, 0, 0.7);
 }
+*/
 
-header h1{
+header h1 {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FDBF48;
+  color: #fdbf48;
   font-size: 3rem;
 }
 
-.white{
+.white {
   color: #ffffff;
 }
 
-.orange{
-  color: #FDBF48;
+.orange {
+  color: #fdbf48;
 }
-
 
 /**** DONUT CHART STYLES ****/
 
-.donut-chart{
+.donut-chart {
   /* adjust size here as needed. They won't distort and maintain ratio. */
   width: 60px;
   height: 80px;
   font-family: Roboto, sans-serif;
 }
 
-.donut-chart text{
+.donut-chart text {
   fill: #ccc; /* chart text color */
 }
 
-.donut-chart svg > circle{
-  stroke: #414A57; /* circle track color */
+.donut-chart svg > circle {
+  stroke: #414a57; /* circle track color */
 }
 
-.donut-chart svg g > circle{
-  stroke: #F5A261; /* circle glow color */
+.donut-chart svg g > circle {
+  stroke: #f5a261; /* circle glow color */
 }
-
 
 /**** BACKGROUNDS ****/
 
-.orange-background{
-  background-image: url('../assets/background-example.jpg');
+.orange-background {
+  background-image: url("../assets/background-example.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,15 +91,12 @@ header h1{
 }
 
 /* darker buttons on some backgrounds */
-.orange-background button.btn{
+.orange-background button.btn {
   border-color: #000;
   color: #000;
 }
 
-.orange-background button.btn:hover{
+.orange-background button.btn:hover {
   background-color: #333;
   color: #ccc;
 }
-
-
-
