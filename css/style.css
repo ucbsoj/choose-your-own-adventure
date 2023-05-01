@@ -3,27 +3,12 @@
   /* Other styles can be added here */
 }
 
-.highlight-green {
-  color: green;
-  font-weight: bold;
-}
-
-.highlight-red {
-  color: red;
-  font-weight: bold;
-}
-
-.highlight-blue {
-  color: blue;
-  font-weight: bold;
-}
-
 /*** OVERALL STYLES ****/
 
 body {
-  background-color: #22252a;
+  background-color: #7084bb;
   color: #ccc;
-  font-family: Roboto, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 /**** HEADER STYLES ****/
@@ -43,12 +28,25 @@ header .shade {
 }
 */
 
-header h1 {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+.description {
+  font-size: 18px;
+}
+
+.text-start d-block {
+  color: white; 
+}
+
+.year {
   color: #fdbf48;
-  font-size: 3rem;
+}
+
+.variable {
+  color: #fdbf48;
+}
+
+.question {
+  font-size: 20px;
+  color: #cccccc;
 }
 
 .white {
@@ -60,7 +58,7 @@ header h1 {
 }
 
 /**** DONUT CHART STYLES ****/
-.donut-chart{
+.donut-chart {
   font-family: Roboto, sans-serif;
 }
 
@@ -70,9 +68,9 @@ header h1 {
   height: 100px;
 }
 
-.donut-chart-big{
-  width:100%;
-  height:150px;
+.donut-chart-big {
+  width: 100%;
+  height: 150px;
 }
 
 .donut-chart-colors text {
@@ -84,32 +82,32 @@ header h1 {
 }
 
 .donut-chart-colors svg g > circle {
-  stroke: #f5a261; /* circle glow color */
+  stroke: #fdbf48; /* circle glow color */
 }
 
-#stats{
-  transform:translateY(-50%);
-  background-color: rgba(50,50,50,0.9);
-  
+#stats {
+  transform: translateY(-50%);
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 /**** BACKGROUNDS ****/
 
-.orange-background {
-  background-image: url("../assets/background-example.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #333; /* darker text color */
-}
-
 /* darker buttons on some backgrounds */
 .orange-background button.btn {
-  border-color: #000;
-  color: #000;
+  border-color: #ccc;
+  color: #ccc;
 }
 
 .orange-background button.btn:hover {
-  background-color: #333;
+  background-color: #ccc;
   color: #ccc;
 }
+
+.card-text {
+  font-size: 18px;
+}
+
+.title {
+  color: #fdbf48;
+}
+
