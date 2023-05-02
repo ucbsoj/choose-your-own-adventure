@@ -7,8 +7,8 @@
 
 body {
   background-color: #7084bb;
-  color: #ccc;
-  font-family: Helvetica, sans-serif;
+  color: white;
+  font-family: optima, sans-serif;
 }
 
 /**** HEADER STYLES ****/
@@ -19,7 +19,23 @@ header {
   background-position: center;
   padding: 0;
   margin: 0;
-  color: #cccccc;
+  color: white;
+}
+
+header h1 {
+  font-family: optima, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fdbf48;
+  font-size: 3rem;
+}
+
+.tagline {
+  color: #ccc;
+}
+
+.context {
+  color: #ccc;
 }
 
 /*
@@ -33,7 +49,7 @@ header .shade {
 }
 
 .text-start d-block {
-  color: white; 
+  color: white;
 }
 
 .year {
@@ -46,11 +62,11 @@ header .shade {
 
 .question {
   font-size: 20px;
-  color: #cccccc;
+  color: white;
 }
 
 .white {
-  color: #ffffff;
+  color: white;
 }
 
 .orange {
@@ -59,7 +75,7 @@ header .shade {
 
 /**** DONUT CHART STYLES ****/
 .donut-chart {
-  font-family: Roboto, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .donut-chart-small {
@@ -74,7 +90,7 @@ header .shade {
 }
 
 .donut-chart-colors text {
-  fill: #ccc; /* chart text color */
+  fill: white; /* chart text color */
 }
 
 .donut-chart-colors svg > circle {
@@ -94,13 +110,13 @@ header .shade {
 
 /* darker buttons on some backgrounds */
 .orange-background button.btn {
-  border-color: #ccc;
-  color: #ccc;
+  border-color: white;
+  color: white;
 }
 
 .orange-background button.btn:hover {
-  background-color: #ccc;
-  color: #ccc;
+  background-color: white;
+  color: white;
 }
 
 .card-text {
@@ -111,3 +127,16 @@ header .shade {
   color: #fdbf48;
 }
 
+.bg-image {
+  background-image: url("../assets/signhill.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.end {
+  font-family: optima, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}

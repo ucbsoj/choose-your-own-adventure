@@ -11,7 +11,7 @@
       .progress {
         height: 3px;
         width: 0%;
-        background-color: #000;
+        background-color: white;
         position: fixed;
         top: 0;
         left: 0;
@@ -51,7 +51,9 @@
                 <span class="white">The Cost of</span>
                 <span class="orange">Teaching</span>
               </h1>
-              <h4>Experience the Realities of Teaching in the Bay Area</h4>
+              <h4 class="tagline">
+                Experience the Realities of Teaching in the Bay Area
+              </h4>
               <p class="text-start d-block">
                 <strong>South San Francisco Unified School District</strong>
                 loses nearly 14% of its high school teachers annually. Want to
@@ -235,10 +237,9 @@
           <!-- end .row -->
 
           <p class="intro-paragraph">
-            <span class="variable"> <strong>Money</strong> </span>: To save up
-            for a future house, you annually deposit your remaining funds into
-            this savings account dedicated to that goal. You currently have
-            $10,000 that you saved up during college.
+            <span class="variable"> <strong>Money</strong> </span>: This is your
+            savings account. You currently have $10,000 that you saved up during
+            college.
           </p>
 
           <p class="intro-paragraph">
@@ -279,10 +280,9 @@
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="Great choice! You chose to live in a studio apartment in South San Francisco."
                 data-description="The average rent for a one-bedroom apartment in South San Francisco is $2,395. That means 48% of your monthly income would be going towards your rent. At the end of this year, you'll have {money} left over!"
-                data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="+10000"
+                data-money="+59784"
                 data-continuing-expense="-64895"
                 data-year="1">
                 <img src="assets/sofa.png" class="card-img-top" alt="..." />
@@ -299,10 +299,9 @@
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to live with your parents"
                 data-description="Smart move! You chose to live with your parents. Luckily, they’ll let you stay for free."
-                data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="-15"
-                data-money="+10000"
+                data-money="+59784"
                 data-year="1"
                 data-continuing-expense="-40259">
                 <img src="assets/couch.png" class="card-img-top" alt="..." />
@@ -352,9 +351,10 @@
         <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
             <h2 class="title">
-              Your yearly salary went up to $61,207! It will continue to climb
-              up the district's salary schedule, but unfortunately, so does
-              inflation, so you'll still have to be frugal.
+              Your yearly salary went up to <strong> $61,207!</strong> It will
+              continue to climb up the district's salary schedule each year, but
+              unfortunately, so does inflation, so you'll still have to be
+              frugal.
             </h2>
 
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
@@ -381,19 +381,18 @@
                 >What do you do?</strong
               >
             </p>
-            <p>
+            <span class="context">
               Staying as a club advisor earns you an additional stipend of $250
-              per year, but it would take more time out of your day.
-            </p>
+              per year, but it would take more time out of your day.</span
+            >
             <div class="col-6">
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to stay as club advisor"
                 data-description="Nice! Your students are ecstatic, but your energy levels have depleted a bit. Sponsoring a club or extracurricular activity at school can bring in some extra money, but it can be a big time commitment. At the same time, clubs are important for building a sense of community for the students."
-                data-media=""
-                data-energy="00"
-                data-motivation="-15"
-                data-money=""
+                data-energy="-15"
+                data-motivation="-20"
+                data-money="0"
                 data-continuing-expense="+250"
                 data-year="2">
                 <img src="assets/locker.png" class="card-img-top" alt="..." />
@@ -411,7 +410,7 @@
                 data-title="You chose to let the club dissolve"
                 data-description="You get your Tuesday afternoons back, but your students seem bummed out. Sponsoring a club or extracurricular activity at school can bring in some extra money, but it can be a big time commitment. At the same time, clubs are important for building a sense of community for students."
                 data-energy="0"
-                data-motivation="-5"
+                data-motivation="-10"
                 data-money="0"
                 data-continuing-expense="0"
                 data-year="2">
@@ -516,18 +515,17 @@
                 >What do you do?</strong
               >
             </p>
-            <p>
-              Teaching summer school would earn you about $5,000, but it takes
+            <span class="context">
+              Teaching summer school would earn you about $4,500, but it takes
               time off from your vacation time.
-            </p>
+            </span>
             <div class="col-6">
               <button
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to go on vacation with your friends"
                 data-description="You deserve a break! You had a great time with your friends, but it cost you $1,000. Although having the summer off is a big incentive, a number of teachers choose to teach summer school or spend a majority of their vacation time preparing for the new school year."
-                data-media=""
                 data-energy="0"
-                data-motivation="+5"
+                data-motivation="+10"
                 data-money="-1000"
                 data-continuing-expense="0"
                 data-year="3">
@@ -543,7 +541,6 @@
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You chose to teach summer school"
                 data-description="You were hoping for a restful summer, but you figured it would be best to teach summer school to make some extra income. Although having the summer off is a big incentive, a number of teachers choose to teach summer school or spend a majority of their vacation time preparing for the new school year."
-                data-media="assets/stock-footage.webm"
                 data-energy="-15"
                 data-motivation="-10"
                 data-money="+4500"
@@ -552,7 +549,7 @@
                 <img src="assets/window.png" class="card-img-top" alt="..." />
 
                 <div class="card-body">
-                  <div class="card-text">Teach summer school (+5,000)</div>
+                  <div class="card-text">Teach summer school (+$4,500)</div>
                 </div>
               </button>
             </div>
@@ -603,7 +600,6 @@
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="You decided to move into a $2,390/month apartment in South San Francisco."
                 data-description="Good thing you're splitting! Your monthly rent is now $1,197. Many teachers working in the Bay Area commute to work. Some even turn down job offers due to the high cost of living as the pay is barely enough to cover it."
-                data-media=""
                 data-energy="0"
                 data-motivation="0"
                 data-money="0"
@@ -624,7 +620,6 @@
                 class="card bg-transparent text-bg-dark border border-light-subtle p-0 h-100"
                 data-title="The cheapest place you could find in the Bay Area is in Vallejo for $1,600/month "
                 data-description="Your share of the rent is $800, not bad! But your commute now sucks and is costing you extra in transportation. Many teachers working in the Bay Area commute to work. Some even turn down job offers due to the high cost of living as the pay is barely enough to cover it."
-                data-media="assets/stock-footage.webm"
                 data-energy="-25"
                 data-motivation="-10"
                 data-money="0"
@@ -689,9 +684,9 @@
                 data-description="Although you're spending money and time to go back to school, your salary will increase by 2%. Many teachers go back to school part-time to get bumped higher on
               the salary schedule. At most, with a BA, credential, MA/DR, and 45
               credits, you could be making 11.5% more."
-                data-media=""
                 data-energy="-25"
                 data-motivation="0"
+                data-year="6"
                 data-money="-5760"
                 data-continuing-expense="+150">
                 <img src="assets/backpack.png" class="card-img-top" alt="..." />
@@ -712,6 +707,7 @@
                 data-energy="0"
                 data-motivation="0"
                 data-money="0"
+                data-year="6"
                 data-continuing-expense="0">
                 <img src="assets/desk.png" class="card-img-top" alt="..." />
 
@@ -771,8 +767,9 @@
                 data-description="You're bummed that your friend is gone, but you'll still keep in touch. Plus, you don't want to let your students down."
                 data-media=""
                 data-energy="0"
-                data-motivation="-15"
+                data-motivation="-20"
                 data-money="0"
+                data-year="8"
                 data-continuing-expense="0">
                 <img src="assets/book.png" class="card-img-top" alt="..." />
 
@@ -791,9 +788,10 @@
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="0"
-                data-money="0">
+                data-money="0"
+                data-year="8"
+                data-continuing-expense="0">
                 <img src="assets/gate.png" class="card-img-top" alt="..." />
-
                 <div class="card-body">
                   <div class="card-text">
                     Quit with them and transfer to a higher paying district
@@ -858,7 +856,6 @@
     </section>
 
     <!-- Year 9 -->
-
     <section
       class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="row d-flex justify-content-center align-items-center">
@@ -880,13 +877,14 @@
                 data-energy="-25"
                 data-motivation="-10"
                 data-money="+15000"
-                data-continuing-expense="0">
+                data-year="9"
+                data-continuing-expense="-7500">
                 <img src="assets/mop.png" class="card-img-top" alt="..." />
 
                 <div class="card-body">
                   <div class="card-text">
                     Stay teaching at South San Francisco High School and pick up
-                    a part-time job as a server on the weekends (+$20,000)
+                    a part-time job as a server on the weekends (+$15,000)
                   </div>
                 </div>
               </button>
@@ -899,7 +897,9 @@
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="0"
-                data-money="0">
+                data-money="0"
+                data-year="9"
+                data-continuing-expense="0">
                 <img src="assets/gate.png" class="card-img-top" alt="..." />
 
                 <div class="card-body">
@@ -963,8 +963,9 @@
               growing their families."
                 data-media=""
                 data-energy="0"
-                data-motivation="-10"
+                data-motivation="-15"
                 data-money="-19200"
+                data-year="11"
                 data-continuing-expense="0">
                 <img src="assets/health.png" class="card-img-top" alt="..." />
 
@@ -984,9 +985,10 @@
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="0"
-                data-money="0">
+                data-money="0"
+                data-year="11"
+                data-continuing-expense="0">
                 <img src="assets/gate.png" class="card-img-top" alt="..." />
-
                 <div class="card-body">
                   <div class="card-text">
                     Transfer to a higher paying district and get you and your
@@ -1047,7 +1049,9 @@
                 data-media=""
                 data-energy="0"
                 data-motivation="0"
-                data-money="0">
+                data-money="0"
+                data-year="14"
+                data-continuing-expense="0">
                 <img
                   src="assets/chalkboard.png"
                   class="card-img-top"
@@ -1068,7 +1072,9 @@
                 data-media="assets/stock-footage.webm"
                 data-energy="0"
                 data-motivation="0"
-                data-money="0">
+                data-money="0"
+                data-year="14"
+                data-continuing-expense="0">
                 <img src="assets/curtain.png" class="card-img-top" alt="..." />
 
                 <div class="card-body">
@@ -1107,11 +1113,11 @@
     <!--end of the game-->
 
     <section
-      class="container text-center vh-100 d-flex flex-column justify-content-center">
-      <div class="row">
+      class="container-fluid text-center vh-100 d-flex flex-column justify-content-center align-items-center bg-image">
+      <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 col-xxl-6">
           <div class="">
-            <h1 class="title">Thanks for playing!</h1>
+            <h1 class="end">Thanks for playing!</h1>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
               <button class="btn btn-lg btn-group btn-outline-light d-block">
                 Play again?
@@ -1121,6 +1127,7 @@
         </div>
       </div>
     </section>
+
     <!-- 
       Variables at top left of screen. 
       You can edit these to be different variable,
@@ -1297,7 +1304,7 @@
           //change these if you decide on different variables
           variables: {
             money: {
-              startingValue: 59784,
+              startingValue: 10000,
               currentValue: 59000, //just a placeholder that will programmaticaly change
               maxValue: 300000,
               continuingExpense: 0, //holder for continuing expenses
