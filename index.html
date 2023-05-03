@@ -1119,7 +1119,7 @@
           <div class="">
             <h1 class="end">Thanks for playing!</h1>
             <div class="d-grid gap-2 mx-auto col-sm-8 form-group">
-              <button class="btn btn-lg btn-group btn-outline-light d-block">
+              <button class="btn btn-lg btn-group btn-outline-light d-block playagain">
                 Play again?
               </button>
             </div>
@@ -1299,8 +1299,11 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.csv.min.js"></script>
     <script>
+      
+      const the_game = {}
+      
       jQuery(document).ready(function ($) {
-        const the_game = {
+        Object.assign(the_game, {
           //change these if you decide on different variables
           variables: {
             money: {
@@ -1366,7 +1369,8 @@
             firstTime: true,
             gameOver: false,
             whenDoneGoto: "header",
-            currentYear: 0
+            currentYear: 0,
+            gameOverButtonReplace: {} //holder for button that will be replace by game over
           },
 
           //holder for next section
@@ -1390,9 +1394,14 @@
             });
 
             //go to next section when clicking any button.
-            $("button", "section").on("click", function () {
+            $("button", "section").not("button.playagain").on("click", function () {
               that.setUpNextSection(this);
             });
+            
+            //set up game over at bottom
+            $("button.playagain").on("click", function(){
+              that.trueGameOver(this);
+            })
           },
 
           //adds a new --scroll CSS property that is assigned the number of pixels scrolled down.
@@ -1504,6 +1513,8 @@
           //initial setup of donut charts. Also resets them to their initial setting
           initDonutCharts: function () {
             $("#stats").removeClass("visually-hidden");
+            
+            this.variables["money"].continuingExpense = 0;
 
             //iterate through variables, set donuts charts to their starting values
             for (const [key, value] of Object.entries(this.variables)) {
@@ -1648,7 +1659,7 @@
               );
 
             //hide existing button
-            this.nextSection
+            this.options.gameOverButtonReplace = this.nextSection
               .find("button")
               .removeClass("d-block")
               .addClass("d-none");
@@ -1669,6 +1680,7 @@
           createGameOverButton: function (variableKey) {
             const that = this;
 
+            
             const gameOver_btn = $("<button />")
               .addClass(
                 "btn btn-lg btn-group btn-outline-light d-block gameover"
@@ -1676,6 +1688,7 @@
               .html(this.variables[variableKey].gameOverMessage.button_message);
 
             this.nextSection.find(".form-group").append(gameOver_btn);
+            
 
             //create click handler
             gameOver_btn.on("click", function () {
@@ -1691,16 +1704,19 @@
             const that = this;
 
             $("#stats").addClass("visually-hidden");
+            
+            
 
             this.scrollToSection($(this.options.whenDoneGoto), function () {
+              
               //reappear old continue button
-              that.nextSection
-                .find(".button")
+              that.options
+                .gameOverButtonReplace
                 .removeClass("d-none")
                 .addClass("d-block");
 
               //remove this gameover button
-              obj.remove();
+              $("button.gameover").remove();
 
               //reset donut charts
               //that.initDonutCharts();
@@ -1709,6 +1725,23 @@
               //turn off game over trigger
               that.options.gameOver = false;
             });
+          },
+          
+          trueGameOver: function(t){
+            
+            const that = this;
+
+            $("#stats").addClass("visually-hidden");
+            
+            
+            that.scrollToSection($("header"), function(){
+              //reset donut charts
+              //that.initDonutCharts();
+              that.options.firstTime = true;
+
+              //turn off game over trigger
+              that.options.gameOver = false;
+            })
           },
 
           //data media attribute
@@ -1761,7 +1794,7 @@
             const pattern = /{\s*(\w+?)\s*}/g; // {property}
             return template.replace(pattern, (_, token) => data[token] || "");
           }
-        };
+        });
 
         the_game.init();
       });

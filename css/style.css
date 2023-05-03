@@ -116,7 +116,7 @@ header .shade {
 
 .orange-background button.btn:hover {
   background-color: white;
-  color: white;
+  color: #999;
 }
 
 .card-text {
@@ -140,3 +140,7 @@ header .shade {
   color: white;
   font-size: 3rem;
 }
+
+
+
+
