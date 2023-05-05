@@ -127,6 +127,10 @@ header .shade {
   color: #fdbf48;
 }
 
+.highlight {
+  color: #fdbf48;
+}
+
 .bg-image {
   background-image: url("../assets/signhill.png");
   background-size: cover;
@@ -141,6 +145,10 @@ header .shade {
   font-size: 3rem;
 }
 
+.col-6 .card {
+  transition: transform 0.2s ease-in-out;
+}
 
-
-
+.col-6 .card:hover {
+  transform: translateY(-10px);
+}
